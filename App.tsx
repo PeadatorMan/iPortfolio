@@ -39,7 +39,7 @@ const Hero = () => {
   }, [text, isDeleting, loopNum, roles, typingSpeed]);
 
   return (
-    <section id="hero" className="w-full h-screen bg-[url('./img/hero-bg.jpg')] bg-cover bg-center bg-fixed relative flex flex-col justify-center text-white px-4 md:pl-[350px]">
+    <section id="hero" className="w-full h-screen bg-[url('./img/hero-bg.jpg')] bg-cover bg-[-75%_0px] md:bg-center bg-fixed relative flex flex-col justify-center text-white px-4 md:pl-[350px]">
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       <div className="relative z-10" data-aos="fade-in">
         <h1 className="text-5xl md:text-6xl font-bold font-heading mb-4 tracking-tighter"><span className="text-[#111111] text-[4rem] md:text-[5rem] tracking-[-0.08em]">Black</span>BUNNY</h1>
