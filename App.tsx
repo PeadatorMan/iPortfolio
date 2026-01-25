@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronRight, MapPin, Mail, Phone, Smile, Briefcase, Headset, Users, ChevronDown, Download, Globe, GraduationCap, ExternalLink, CheckCircle } from 'lucide-react';
-import { jsPDF } from "jspdf";
-import html2canvas from "html2canvas";
-import { SOCIAL_LINKS, MENU_ITEMS, PROFILE_DATA, SKILLS, RESUME_EDUCATION, RESUME_EXPERIENCE, PORTFOLIO_ITEMS, SERVICES, TESTIMONIALS } from './constants';
+import { SOCIAL_LINKS, MENU_ITEMS, PROFILE_DATA, SKILLS, RESUME_EDUCATION, RESUME_EXPERIENCE, PORTFOLIO_ITEMS, SERVICES, TESTIMONIALS, RESUME_CERTIFICATES } from './constants';
 import GeminiChat from './components/GeminiChat';
+import { generatePDF } from './services/pdfService';
 
 // --- Components defined in App.tsx for single-file XML requirement simplicity per instructions ---
 
@@ -43,7 +42,7 @@ const Hero = () => {
     <section id="hero" className="w-full h-screen bg-[url('./img/hero-bg.jpg')] bg-cover bg-center bg-fixed relative flex flex-col justify-center text-white px-4 md:pl-[350px]">
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       <div className="relative z-10" data-aos="fade-in">
-        <h1 className="text-4xl md:text-6xl font-bold font-heading mb-4"><span className="text-[#333333]">Black</span>BUNNY</h1>
+        <h1 className="text-5xl md:text-6xl font-bold font-heading mb-4 tracking-tighter"><span className="text-[#111111] text-[4rem] md:text-[5rem] tracking-[-0.08em]">Black</span>BUNNY</h1>
         <p className="text-xl md:text-3xl font-display">
           I'm <span className="border-b-2 border-primary pb-1 typing-cursor">{text}</span>
         </p>
@@ -140,44 +139,10 @@ const Resume = () => {
   const handleDownloadCV = async () => {
     setIsGenerating(true);
     try {
-      const input = document.getElementById('cv-template');
-      if (!input) return;
-
-      const canvas = await html2canvas(input, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        backgroundColor: '#ffffff'
+      await generatePDF({
+        elementId: 'cv-template',
+        filename: `${PROFILE_DATA.name.replace(' ', '_')}_CV.pdf`
       });
-
-      const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
-
-      const imgWidth = canvas.width;
-      const imgHeight = canvas.height;
-
-      // Scale to fit width
-      const ratio = pdfWidth / imgWidth;
-      const imgFinalHeight = imgHeight * ratio;
-
-      let heightLeft = imgFinalHeight;
-      let position = 0;
-
-      // Add first page
-      pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, imgFinalHeight);
-      heightLeft -= pdfHeight;
-
-      // Add additional pages if needed
-      while (heightLeft > 0) {
-        position -= pdfHeight;
-        pdf.addPage();
-        pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, imgFinalHeight);
-        heightLeft -= pdfHeight;
-      }
-
-      pdf.save(`${PROFILE_DATA.name.replace(' ', '_')}_CV.pdf`);
     } catch (err) {
       console.error("Error generating PDF:", err);
       alert("Failed to generate PDF. Please try again.");
@@ -262,6 +227,17 @@ const Resume = () => {
               <div className="text-gray-600">{item.description.map((d, i) => <p key={i}>{d}</p>)}</div>
             </div>
           ))}
+
+          <h3 className="text-2xl font-bold text-secondary my-6 font-heading">Certificate and Course</h3>
+          {RESUME_CERTIFICATES.map((item, index) => (
+            <div key={index} className="relative pl-5 border-l-2 border-primary pb-10 last:pb-0">
+              <div className="absolute w-4 h-4 rounded-full bg-white border-2 border-primary -left-[9px] top-0"></div>
+              <h4 className="text-lg font-bold text-secondary uppercase mb-2">{item.title}</h4>
+              {item.duration && <div className="bg-gray-100 inline-block px-3 py-1 font-semibold text-sm mb-4">{item.duration}</div>}
+              <p className="italic mb-4 text-gray-700">{item.subtitle}</p>
+              <div className="text-gray-600">{item.description.map((d, i) => <p key={i}>{d}</p>)}</div>
+            </div>
+          ))}
         </div>
         <div>
           <h3 className="text-2xl font-bold text-secondary mb-6 font-heading">Professional Experience</h3>
@@ -308,8 +284,15 @@ const ModernCVTemplate = () => (
     <div className="col-span-4 bg-[#173b6c] text-white p-8 flex flex-col">
       <div className="mb-10 text-center">
         <img src="./img/user_photo.jpg" alt="Profile" className="w-32 h-32 rounded-full border-4 border-white mx-auto mb-4 object-cover" />
-        <h2 className="text-2xl font-bold uppercase tracking-wider leading-tight">{PROFILE_DATA.name}</h2>
-        <p className="text-blue-200 text-sm mt-2 font-medium tracking-wide">{PROFILE_DATA.role[0]}</p>
+        <div className="flex flex-col items-center">
+          <h2 className="text-4xl font-bold uppercase tracking-wider leading-none mb-2">
+            {PROFILE_DATA.name.split(' ')[0]}
+          </h2>
+          <h2 className="text-3xl font-light uppercase tracking-widest leading-none">
+            {PROFILE_DATA.name.split(' ').slice(1).join(' ')}
+          </h2>
+        </div>
+        <p className="text-blue-200 text-sm mt-4 font-medium tracking-wide">{PROFILE_DATA.role[0]}</p>
       </div>
 
       <div className="mb-10">
@@ -324,15 +307,15 @@ const ModernCVTemplate = () => (
 
       <div className="mb-10">
         <h3 className="text-base font-bold border-b border-blue-400 pb-2 mb-4 uppercase tracking-widest text-blue-100">Skills</h3>
-        <ul className="space-y-4 text-sm font-light">
+        <ul className="space-y-3 text-sm font-light">
           {SKILLS.map(skill => (
             <li key={skill.name}>
               <div className="flex justify-between mb-1 text-blue-50">
                 <span>{skill.name}</span>
                 <span>{skill.level}%</span>
               </div>
-              <div className="w-full bg-blue-900/50 h-1.5 rounded-full overflow-hidden">
-                <div className="bg-blue-400 h-1.5 rounded-full" style={{ width: `${skill.level}%` }}></div>
+              <div className="w-full bg-blue-900/50 h-1 rounded-full overflow-hidden">
+                <div className="bg-blue-400 h-1 rounded-full" style={{ width: `${skill.level}%` }}></div>
               </div>
             </li>
           ))}
@@ -354,6 +337,24 @@ const ModernCVTemplate = () => (
           ))}
         </div>
       </div>
+
+      <div className="mt-10">
+        <h3 className="text-base font-bold border-b border-blue-400 pb-2 mb-4 uppercase tracking-widest text-blue-100">Certificate and Course</h3>
+        <div className="space-y-5">
+          {RESUME_CERTIFICATES.map((cert, i) => (
+            <div key={i}>
+              {cert.duration && (
+                <div className="flex items-center gap-2 text-blue-300 text-xs mb-1">
+                  <GraduationCap size={14} />
+                  <span className="font-bold">{cert.duration}</span>
+                </div>
+              )}
+              <p className="font-semibold text-sm text-white leading-tight mb-1">{cert.title}</p>
+              <p className="text-xs text-blue-200 italic">{cert.subtitle}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
 
     {/* Main Content / Right Column */}
@@ -361,7 +362,7 @@ const ModernCVTemplate = () => (
       <div className="mb-12">
         <h2 className="text-4xl font-bold text-gray-800 mb-2 uppercase tracking-tight">Profile</h2>
         <div className="w-16 h-1.5 bg-[#149ddd] mb-6"></div>
-        <p className="text-gray-600 leading-relaxed text-[15px] text-justify">
+        <p className="text-gray-600 leading-[17px] text-[15px] text-justify">
           {PROFILE_DATA.aboutLong}
         </p>
       </div>
@@ -375,10 +376,10 @@ const ModernCVTemplate = () => (
         <div className="border-l-2 border-gray-100 ml-5 space-y-10 pl-8 pb-4">
           {RESUME_EXPERIENCE.map((exp, i) => (
             <div key={i} className="relative group">
-              <div className="absolute w-5 h-5 bg-white border-4 border-[#149ddd] rounded-full -left-[42px] top-1 transition-transform group-hover:scale-125"></div>
+              <div className="absolute w-5 h-5 bg-white border-4 border-[#149ddd] rounded-full -left-[38px] top-[10px] transition-transform group-hover:scale-125"></div>
               <h3 className="text-xl font-bold text-gray-800 leading-none">{exp.title}</h3>
               <div className="text-sm font-bold text-[#149ddd] mt-1 mb-3 uppercase tracking-wide">{exp.subtitle} <span className="text-gray-400 mx-2">|</span> {exp.duration}</div>
-              <ul className="list-disc list-outside ml-4 space-y-2 text-sm text-gray-600 leading-relaxed marker:text-[#149ddd]">
+              <ul className="list-disc list-outside ml-4 space-y-2 text-sm text-gray-600 leading-4 marker:text-[#149ddd]">
                 {exp.description.map((d, di) => (
                   <li key={di}>{d}</li>
                 ))}

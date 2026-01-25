@@ -47,6 +47,21 @@ export const RESUME_EDUCATION: ResumeItem[] = [
   }
 ];
 
+export const RESUME_CERTIFICATES: ResumeItem[] = [
+  {
+    title: 'Advanced React Patterns',
+    subtitle: 'Frontend Masters',
+    duration: '', // No year period as requested
+    description: ['Advanced React hooks, context, and performance optimization techniques.']
+  },
+  {
+    title: 'Full Stack Web Development',
+    subtitle: 'Udemy',
+    duration: '',
+    description: ['Comprehensive course covering MERN stack development.']
+  }
+];
+
 export const SERVICES: ServiceItem[] = [
   { icon: <BookOpen />, title: 'Lorem Ipsum', description: 'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident' },
   { icon: <FileText />, title: 'Dolor Sitema', description: 'Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata' },
@@ -60,7 +75,7 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const PROFILE_DATA = {
   name: "Ratchapon Nuch-Opas",
-  role: ["UI/UX Designer", "WebDeveloper", "Freelancer", "Fullstack Developer"],
+  role: ["Fullstack Developer", "UI/UX Designer", "WebDeveloper", "Freelancer"],
   aboutShort: "I am a passionate UX/UI designer and web developer based in Bangkok, Thailand.",
   aboutLong: "Highly motivated recent graduate with a strong foundational knowledge in Full Stack Development, specializing in Angular, Node.js and modern JavaScript frameworks. Demonstrated ability to quickly design, develop, and debug robust web applications and mobile prototypes (Flutter). Eager to apply problem-solving skills and continuous learning aptitude to contribute immediately to challenging development projects.",
   email: "looklikelove@me.com",
