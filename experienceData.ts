@@ -2,56 +2,80 @@ import { ResumeItem } from './types';
 
 export const RESUME_EXPERIENCE: ResumeItem[] = [
   {
-    title: 'Senior Graphic Design Specialist',
-    subtitle: 'Experion, New York, NY',
-    duration: '2019 - Present',
+    title: 'Senior Graphic Design Specialist and Fullstack Developer',
+    subtitle: 'Spark Solutions Co.,Ltd, Kannayo, BKK',
+    duration: '2019 - 2025',
     description: [
       'Lead in the design, development, and implementation of the graphic, layout, and production communication materials',
       'Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.',
-      'Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design'
+      'Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design',
+      'Take charge in architecting solutions for complex front-end problems, Take the lead in the definition of and adherence to best practices, Implement new user-facing features while ensuring optimal performance, Mentorship and guidance of other members of the team, Write functional requirements that focus on solving the company objectives'
     ],
     projects: [
       {
-        projectName: "Brand Revolution 2024",
-        client: "Experion HQ",
-        framework: "Adobe CC, Figma, Cinema 4D",
-        details: "Led the complete visual identity overhaul for the global brand, resulting in a 20% increase in brand recognition."
+        projectName: "Web Application: Public Sector Audit Evaluation Committee (PAEC) ระบบสารสนเทศการตรวจสอบและประเมินผลภาคราชการ",
+        client: "Office of the Public Sector Development Commission (OPDC) (สำนักงานคณะกรรมการพัฒนาระบบราชการ)",
+        framework: "Developer, UX/UI Designer, Consultant",
+        details: [
+          "Angular, Larael, SQL Server,SMS API, PDF Report, Excel Report.",
+          "Server Windows 2016 SQL Server 2016 PHP7.2.15 Apache2.4.38 win64 Laravel Framework.",
+          "Developed a fully functional cross-platform memory training application prototype"
+        ],
+        link: "https://paec.opdc.go.th/"
       },
       {
-        projectName: "Client Analytics Dashboard",
-        client: "Experion FinTech",
-        framework: "Figma, React, Tailwind CSS",
-        details: "Designed the UI/UX for a complex financial dashboard used by premium clients to track asset performance."
+        projectName: "Web Application: ASPF Regiser (ระบบการลงทะเบียนรายงานตัวนักเรียนเตรียมทหารและนักเรียนนายร้อย)",
+        client: "Armed Forces Academies Preparatory School (AFAPS) (โรงเรียนเตรียมทหาร)",
+        framework: "Developer, UX/UI Designer, Consultant, Project Manager, Data Analyst",
+        details: ["Larael, SQL Server, SMS API,OCR Text Recognition PDF Report, Excel Report."],
+        link: "https://regiser.afaps.ac.th/"
       },
       {
-        projectName: "Marketing Automation System",
-        client: "Internal Ops",
-        framework: "Vue.js, Node.js",
-        details: "Developed internal tools to streamline the production of marketing assets, reducing turnaround time by 40%."
+        projectName: "Web Application: Office of the National Security Council (สำนักงานสภาความมั่นคงแห่งชาติ)",
+        client: "Office of the National Security Council (สำนักงานสภาความมั่นคงแห่งชาติ)",
+        framework: "BackendDeveloper, UX/UI Designer, Consultant, Project Manager, Data Analyst",
+        details: ["Larael, SQL Server,SMS API, MAP API", "Developed a fully functional cross-platform memory training application prototype using"],
+        link: "https://www.nsc.go.th/"
+      },
+      {
+        projectName: "Web Application : DPIM (กรมอุตสาหกรรมพื้นฐานและการเหมืองแร่ (กพร.))",
+        client: "Department of Primary Industries and Mines - DPIM (กรมอุตสาหกรรมพื้นฐานและการเหมืองแร่ (กพร.))",
+        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
+        details: ["Larael, SQL Server, SMS API, MAP API, Excel Report, PDF Report, ", "Developed a fully functional cross-platform memory training application prototype using"],
+        link: "https://www.dpim.go.th/"
+      },
+      {
+        projectName: "Web Application : ToolDee Shop",
+        client: "Tooldee Engineering Co., Ltd.",
+        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
+        details: ["Larael, SQL Server, Commerce System, Payment Gateway, CRUD System, Excel Report, PDF Report, ", "Developed a fully functional cross-platform memory training application prototype using"],
+        link: "https://eshop.tooldee.co.th"
       }
     ]
   },
   {
-    title: 'Graphic Design Specialist',
-    subtitle: 'Stepping Stone Advertising, New York, NY',
+    title: 'Look Like Developer',
+    subtitle: 'Look Like Developer, Wang Thonglang, BKK',
     duration: '2017 - 2018',
     description: [
       'Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).',
-      'Managed up to 5 projects or tasks at a given time while under pressure',
+      'Skilled in using Node.js, Nextjs, Vite, Nuxtjs, Nestjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, Prisma, PostgreSQL, Redis, Docker, Git, GitHub, GitLab for design and prototyping.',
       'Recommended and consulted with clients on the most appropriate graphic design'
     ],
     projects: [
       {
-        projectName: "City Tourism Campaign",
-        client: "NY Tourism Board",
-        framework: "Adobe Illustrator, Photoshop",
-        details: "Created a series of award-winning posters and digital ads promoting city landmarks."
+        projectName: "promptpedia",
+        client: "365liveitup",
+        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
+        details: ["Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
+        link: "https://promptpedia.365liveitup.com/"
       },
       {
         projectName: "Ecommerce Platform Redesign",
         client: "ShopEZ",
         framework: "Sketch, InVision",
-        details: "Revamped the user journey for a major e-commerce retailer, improving checkout conversion by 15%."
+        details: ["Revamped the user journey for a major e-commerce retailer, improving checkout conversion by 15%."],
+        link: "#"
       }
     ]
   },
@@ -69,13 +93,15 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
         projectName: "Employee HR Portal",
         client: "ABC Corp HR",
         framework: "HTML5, CSS3, jQuery",
-        details: "Assisted in the frontend development of the internal leave management system."
+        details: ["Assisted in the frontend development of the internal leave management system."],
+        link: "#"
       },
       {
         projectName: "Corporate Newsletter Template",
         client: "Comms Team",
         framework: "MJML, HTML Email",
-        details: "Designed responsive email templates ensuring compatibility across all major email clients."
+        details: ["Designed responsive email templates ensuring compatibility across all major email clients."],
+        link: "#"
       }
     ]
   },
@@ -93,7 +119,8 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
         projectName: "Local Coffee Shop Menu",
         client: "Bean There",
         framework: "Adobe InDesign",
-        details: "Designed print-ready menus and promotional flyers for a local startup."
+        details: ["Designed print-ready menus and promotional flyers for a local startup."],
+        link: "#"
       }
     ]
   }

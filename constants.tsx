@@ -34,31 +34,37 @@ export const SKILLS: Skill[] = [
 
 export const RESUME_EDUCATION: ResumeItem[] = [
   {
-    title: 'Master of Fine Arts & Graphic Design',
-    subtitle: 'Rochester Institute of Technology, Rochester, NY',
-    duration: '2015 - 2016',
-    description: ['Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit.', 'Eveniet sole quia optio itiner']
+    title: 'B.Eng (Computer Engineering)',
+    subtitle: 'Mahanakorn University of Technology, Bangkok, Thailand',
+    duration: '1997 - 2001',
+    description: ['A Bachelor of Engineering (B.Eng.) in Electrical and Computer Engineering (ECE) is a 4 - year undergraduate program combining, typically, 127–149 credits of coursework in power systems, electronics, and computer science.', 'It prepares graduates for roles in AI, robotics, embedded systems, and telecommunications, often featuring capstone projects and specialized tracks']
   },
   {
-    title: 'Bachelor of Fine Arts & Graphic Design',
-    subtitle: 'Rochester Institute of Technology, Rochester, NY',
-    duration: '2010 - 2014',
-    description: ['Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila']
+    title: 'Electrical Power, Diploma Certificate',
+    subtitle: 'Phitsanulok Technical College, Phitsanulok, Thailand',
+    duration: '1994 - 1997',
+    description: ['A Diploma in Electrical Power Engineering (typically 1–5 years) provides technical training in the design, installation, operation, and maintenance of power systems, covering areas like generation, transmission, distribution, and renewable energy.', 'Programs focus on practical skills, including troubleshooting, electrical machinery, safety compliance, and power system analysis for roles in utility, manufacturing, and engineering firms']
   }
 ];
 
 export const RESUME_CERTIFICATES: ResumeItem[] = [
   {
-    title: 'Advanced React Patterns',
-    subtitle: 'Frontend Masters',
+    title: 'Certificate of IOS Application development',
+    subtitle: 'International College King Mongkuts Institute of Technology Ladkrabang',
     duration: '', // No year period as requested
-    description: ['Advanced React hooks, context, and performance optimization techniques.']
+    description: ['To create an Apple distribution certificate, open Keychain Access, request a certificate from a certificate authority, and upload the CSR file.']
   },
   {
-    title: 'Full Stack Web Development',
-    subtitle: 'Udemy',
+    title: 'Introduction to Microsoft ASP.Net',
+    subtitle: 'Microsoft Approved Course',
     duration: '',
-    description: ['Comprehensive course covering MERN stack development.']
+    description: ['Part of the .NET Platform: ASP.NET extends the .NET platform with tools and libraries specifically for web development. This means developers can leverage the vast .NET ecosystem and use languages like C#, F#, and Visual Basic to write both client-side and server-side code.']
+  },
+  {
+    title: 'Certificate of Teacher Assistance',
+    subtitle: 'Teacher assistance of C Langguage',
+    duration: '',
+    description: ['Department of Computer Engineering, Mahanakorn University of Technology']
   }
 ];
 

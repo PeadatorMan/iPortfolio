@@ -15,7 +15,8 @@ export interface Project {
   projectName: string;
   client: string;
   framework: string;
-  details: string;
+  details: string[]; // Changed to array of strings
+  link?: string;     // Added optional link
 }
 
 export interface ResumeItem {

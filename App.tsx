@@ -169,11 +169,23 @@ const Resume = () => {
             {item.projects.map((proj, idx) => (
               <div key={idx} className="border-l-2 border-primary/30 pl-3">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                  <span className="font-semibold text-sm text-secondary">{proj.projectName}</span>
+                  <span className="font-semibold text-sm text-secondary">
+                    {proj.projectName}
+                  </span>
                   <span className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0 w-fit">{proj.client}</span>
                 </div>
                 <div className="text-xs text-primary mb-1 font-mono">{proj.framework}</div>
-                <p className="text-sm text-gray-600 leading-snug">{proj.details}</p>
+                <ul className="list-disc list-inside text-sm text-gray-600 leading-snug">
+                  {proj.details.map((detail, dIdx) => (
+                    <li key={dIdx}>{detail}</li>
+                  ))}
+                </ul>
+                {proj.link && (
+                  <div className="mt-1 text-xs text-primary truncate pl-3">
+                    <span className="font-semibold text-gray-500">URL : </span>
+                    <a href={proj.link} target="_blank" rel="noopener noreferrer" className="hover:underline">{proj.link}</a>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -228,7 +240,7 @@ const Resume = () => {
             </div>
           ))}
 
-          <h3 className="text-2xl font-bold text-secondary my-6 font-heading">Certificate and Course</h3>
+          <h3 className="text-2xl font-bold text-secondary my-6 font-heading">Certificate Training and Course</h3>
           {RESUME_CERTIFICATES.map((item, index) => (
             <div key={index} className="relative pl-5 border-l-2 border-primary pb-10 last:pb-0">
               <div className="absolute w-4 h-4 rounded-full bg-white border-2 border-primary -left-[9px] top-0"></div>
@@ -388,12 +400,25 @@ const ModernCVTemplate = () => (
               {/* Projects in CV PDF */}
               {exp.projects && exp.projects.length > 0 && (
                 <div className="mt-4 grid gap-2">
-                  <div className="text-xs font-bold text-gray-500 uppercase tracking-wide">Key Projects</div>
+                  <div className="text-xs font-bold text-gray-500 uppercase tracking-wide">Projects</div>
                   <div className="grid grid-cols-1 gap-2">
                     {exp.projects.map((proj, pIdx) => (
                       <div key={pIdx} className="bg-gray-50 p-2 rounded text-xs">
-                        <div className="font-bold text-gray-700">{proj.projectName} <span className="font-normal text-gray-500">- {proj.client}</span></div>
-                        <div className="text-[#149ddd] text-[10px]">{proj.framework}</div>
+                        <div className="font-bold text-gray-700 flex justify-between items-start">
+                          <span>{proj.projectName} <span className="font-normal text-gray-500 block">Client: {proj.client}</span></span>
+                        </div>
+                        <div className="text-[#149ddd] text-[10px] mb-1">{proj.framework}</div>
+                        <ul className="list-disc list-inside text-gray-600 leading-none">
+                          {proj.details.map((d, di) => (
+                            <li key={di}>{d}</li>
+                          ))}
+                        </ul>
+                        {proj.link && (
+                          <div className="mt-1 text-[10px] text-[#149ddd] left-[-10px]">
+                            <span className="font-semibold text-gray-500">URL : </span>
+                            {proj.link}
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
