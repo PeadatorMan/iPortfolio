@@ -69,9 +69,12 @@ export const RESUME_CERTIFICATES: ResumeItem[] = [
 ];
 
 export const SERVICES: ServiceItem[] = [
-  { icon: <BookOpen />, title: 'Lorem Ipsum', description: 'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident' },
-  { icon: <FileText />, title: 'Dolor Sitema', description: 'Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata' },
-  { icon: <Server />, title: 'Sed ut perspiciatis', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur' },
+  { icon: <BookOpen />, title: 'End-to-End Application Development', description: 'Designing and building both client-side and server-side components from scratch.' },
+  { icon: <FileText />, title: 'Web & API Development', description: 'Creating RESTful APIs, microservices, and server-side logic using Node.js, PHP (Laravel), Java (Spring Boot), and Type Script' },
+  { icon: <Server />, title: 'Front-End Development', description: 'Building responsive, interactive, and user-friendly interfaces using React, Vue.js, Angular, and Next.js.' },
+  { icon: <BookOpen />, title: 'System Integration & Architecture', description: 'Designing complex system architectures and connecting third-party services.' },
+  { icon: <FileText />, title: 'Database Design & Management', description: 'Managing relational and non-relational databases, including MySQL, PostgreSQL, MongoDB, and Firebase.' },
+  { icon: <Server />, title: 'DevOps & Cloud Deployment', description: 'Managing CI/CD pipelines, Docker, Kubernetes, and cloud services (AWS, Google Cloud, Azure).' },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

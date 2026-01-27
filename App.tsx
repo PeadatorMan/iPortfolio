@@ -513,7 +513,7 @@ const Portfolio = () => {
 const Services = () => {
   return (
     <section id="services" className="py-16 px-4 md:px-10 bg-white">
-      <SectionHeader title="Services" description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem." />
+      <SectionHeader title="Services" description="Full Stack Developer services cover the entire spectrum of application development, from front-end user interfaces to back-end logic, databases, and server configuration. They provide end-to-end solutions for web, mobile, and desktop applications, enhancing efficiency and speed to market." />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {SERVICES.map((service, index) => (
           <div key={index} className="flex gap-4 p-4 hover:shadow-lg transition-shadow rounded-lg">
@@ -577,7 +577,7 @@ ${message}`;
 
   return (
     <section id="contact" className="py-16 px-4 md:px-10 bg-light relative">
-      <SectionHeader title="Contact" description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem." />
+      <SectionHeader title="Contact" description="I’m currently open to new opportunities, freelance projects, or collaborating on innovative full-stack solutions. Whether you have a specific project in mind or just want to chat about tech, feel free to reach out. Let’s Build Something Together." />
       <div className="grid md:grid-cols-12 gap-8 shadow-lg bg-white p-6 rounded-lg">
         <div className="md:col-span-5 space-y-8">
           <div className="flex group">
