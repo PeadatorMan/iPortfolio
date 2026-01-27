@@ -453,7 +453,7 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="py-16 px-4 md:px-10 bg-light">
-      <SectionHeader title="Portfolio" description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem." />
+      <SectionHeader title="Portfolio" description="A portfolio that shines from simplicity, setting a great example of what a web developer portfolio can be." />
 
       <div className="flex justify-center mb-8">
         <ul className="flex flex-wrap gap-4 bg-white px-6 py-2 rounded-full shadow-sm">
