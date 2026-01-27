@@ -198,7 +198,7 @@ const Resume = () => {
     <section id="resume" className="py-16 px-4 md:px-10 bg-white">
       <SectionHeader
         title="Resume"
-        description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem."
+        description="Full Stack Developer adept in working in both front-end and back-end development processes. Highly skilled in programming design, development, and implementation of functional specifications."
         action={
           <button
             onClick={handleDownloadCV}

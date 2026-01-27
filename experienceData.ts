@@ -6,8 +6,15 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
     subtitle: 'Spark Solutions Co.,Ltd, Kannayo, BKK',
     duration: '2019 - 2025',
     description: [
+      'Performed coding, debugging, and unit testing tasks in support of projects.',
+      'Provided ongoing maintenance for assigned applications and systems.',
+      'Applied current programming standards and methodologies to all relevant projects and activities.',
+      'Upgraded and maintained both the back- end and front - end systems.',
+      'Worked alongside web developers, marketing teams, and engineers to ensure the right look and vital features were achieved.',
+      'Remained adaptable and committed to staying on top of growing technologies and engineering trends. ',
+      'Developed scalable web - based user interfaces and components using Angular, Laravel, Node.js, and TypeScript.',
+      'Increased database admin effectiveness by 25 percent.',
       'Lead in the design, development, and implementation of the graphic, layout, and production communication materials',
-      'Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.',
       'Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design',
       'Take charge in architecting solutions for complex front-end problems, Take the lead in the definition of and adherence to best practices, Implement new user-facing features while ensuring optimal performance, Mentorship and guidance of other members of the team, Write functional requirements that focus on solving the company objectives'
     ],
@@ -17,7 +24,11 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
         client: "Office of the Public Sector Development Commission (OPDC) (สำนักงานคณะกรรมการพัฒนาระบบราชการ)",
         framework: "Developer, UX/UI Designer, Consultant",
         details: [
-          "Angular, Larael, SQL Server,SMS API, PDF Report, Excel Report.",
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Provided ongoing maintenance for assigned applications and systems.",
+          "Applied current programming standards and methodologies to all relevant projects and activities.",
+          "Worked alongside web developers, marketing teams, and engineers to ensure the right look and vital features were achieved. ",
+          "Angular, Laravel, SQL Server,SMS API, PDF Report, Excel Report.",
           "Server Windows 2016 SQL Server 2016 PHP7.2.15 Apache2.4.38 win64 Laravel Framework.",
           "Developed a fully functional cross-platform memory training application prototype"
         ],
@@ -48,7 +59,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
         projectName: "Web Application : ToolDee Shop",
         client: "Tooldee Engineering Co., Ltd.",
         framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
-        details: ["Larael, SQL Server, Commerce System, Payment Gateway, CRUD System, Excel Report, PDF Report, ", "Developed a fully functional cross-platform memory training application prototype using"],
+        details: ["Developed and designed front end web architecture with high responsiveness of applications", "Larael, SQL Server, Commerce System, Payment Gateway, CRUD System, Excel Report, PDF Report, ", "Developed a fully functional cross-platform memory training application prototype using"],
         link: "https://eshop.tooldee.co.th"
       }
     ]
@@ -59,6 +70,8 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
     duration: '2017 - 2018',
     description: [
       'Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).',
+      "Consistently applied best practices for writing clean, secure, readable, and scalable code.",
+      "Worked with other departments to address improvements, internal tools, and implementation issues. ",
       'Skilled in using Node.js, Nextjs, Vite, Nuxtjs, Nestjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, Prisma, PostgreSQL, Redis, Docker, Git, GitHub, GitLab for design and prototyping.',
       'Recommended and consulted with clients on the most appropriate graphic design'
     ],
@@ -67,23 +80,35 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
         projectName: "promptpedia",
         client: "365liveitup",
         framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
-        details: ["Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
+        details: ["Developed and designed front end web architecture with high responsiveness of applications", "Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
         link: "https://promptpedia.365liveitup.com/"
       },
       {
         projectName: "Ecommerce Platform Redesign",
         client: "ShopEZ",
         framework: "Sketch, InVision",
-        details: ["Revamped the user journey for a major e-commerce retailer, improving checkout conversion by 15%."],
-        link: "#"
+        details: ["Revamped the user journey for a major e-commerce retailer, improving checkout conversion by 15%."]
+      },
+      {
+        projectName: "promptpedia",
+        client: "365liveitup",
+        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
+        details: ["Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
+        link: "https://promptpedia.365liveitup.com/"
       }
     ]
   },
   {
-    title: 'Junior Web Designer',
-    subtitle: 'ABC Corp, New York, NY',
-    duration: '2015 - 2017',
+    title: 'Frontend Developer',
+    subtitle: 'Digital New Age Agency Co.,Ltd., Bangkok, Thailand',
+    duration: '2003 - 2016',
     description: [
+      'Performed coding, debugging, and unit testing tasks in support of projects.',
+      'Provided ongoing maintenance for assigned applications and systems.',
+      'Worked alongside web developers, marketing teams, and engineers to ensure the right look and vital features were achieved.',
+      'Remained adaptable and committed to staying on top of growing technologies and engineering trends.',
+      'Applied current programming standards and methodologies to all relevant projects and activities.',
+      'Upgraded and maintained both the back- end and front - end systems.',
       'Designed internal applications for employee management.',
       'Collaborated with senior developers to implement UI designs.',
       'Participated in daily stand-up meetings and agile workflows.'
@@ -106,21 +131,23 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
     ]
   },
   {
-    title: 'Intern',
-    subtitle: 'XYZ Studio, Rochester, NY',
-    duration: '2014 - 2015',
+    title: 'Asia info Solution Co.,Ltd.',
+    subtitle: 'Programming Engineer and Web Devloper (Temporarily Contract), Bangkok, Thailand',
+    duration: 'June 2008 - March 2012',
     description: [
-      'Assisted with basic graphic design tasks and asset preparation.',
+      'Applied current programming standards and methodologies to all relevant projects and activities.',
+      'Upgraded and maintained both the back- end and front - end systems.',
+      'Designed internal applications for employee management.',
       'Learned industry standard tools including Photoshop and Illustrator.',
       'Supported the team in delivering client projects on time.'
     ],
     projects: [
       {
-        projectName: "Local Coffee Shop Menu",
-        client: "Bean There",
-        framework: "Adobe InDesign",
-        details: ["Designed print-ready menus and promotional flyers for a local startup."],
-        link: "#"
+        projectName: "Programming, Web Desing And Graphics Design",
+        client: "Suan Dusit Rajabhat University",
+        framework: "SEO, PHP, MySQL, PhotoShop, Illustrator, and other application for design",
+        details: ["Designed print-ready menus and promotional flyers for a local startup.", "Developed Web Application E-Profile: Suan Dusit Rajabhat University."],
+        link: "http://www.sdu.ac.th"
       }
     ]
   }
