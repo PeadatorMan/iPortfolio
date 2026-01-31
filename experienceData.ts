@@ -67,7 +67,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
   {
     title: 'Look Like Developer',
     subtitle: 'Look Like Developer, Wang Thonglang, BKK',
-    duration: '2017 - 2018',
+    duration: '2020 - 2025',
     description: [
       'Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).',
       "Consistently applied best practices for writing clean, secure, readable, and scalable code.",
