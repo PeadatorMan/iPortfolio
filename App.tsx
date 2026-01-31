@@ -834,7 +834,7 @@ const App: React.FC = () => {
 
         <Skills />
         <Resume />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Services />
         <Contact />
         <Footer />

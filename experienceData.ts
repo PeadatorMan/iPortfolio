@@ -9,7 +9,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
       'Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).',
       "Consistently applied best practices for writing clean, secure, readable, and scalable code.",
       "Worked with other departments to address improvements, internal tools, and implementation issues. ",
-      'Skilled in using Node.js, Nextjs, Vite, Nuxtjs, Nestjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, Prisma, PostgreSQL, Redis, Docker, Git, GitHub, GitLab for design and prototyping.',
+      'Skilled in using Node.js, Nextjs, ReactJS, Vite, Nuxtjs, Nestjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, Prisma, PostgreSQL, Redis, Docker, Git, GitHub, GitLab for design and prototyping.',
       'Recommended and consulted with clients on the most appropriate graphic design'
     ],
     projects: [

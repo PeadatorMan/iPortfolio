@@ -18,7 +18,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'hero', label: 'Home', icon: <Home size={20} /> },
   { id: 'about', label: 'About', icon: <User size={20} /> },
   { id: 'resume', label: 'Resume', icon: <FileText size={20} /> },
-  { id: 'portfolio', label: 'Portfolio', icon: <BookOpen size={20} /> },
+  // { id: 'portfolio', label: 'Portfolio', icon: <BookOpen size={20} /> },
   { id: 'services', label: 'Services', icon: <Server size={20} /> },
   { id: 'contact', label: 'Contact', icon: <Mail size={20} /> },
 ];
