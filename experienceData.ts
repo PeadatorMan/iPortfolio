@@ -30,8 +30,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
         projectName: "promptpedia",
         client: "365liveitup",
         framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
-        details: ["Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
-        link: "https://promptpedia.365liveitup.com/"
+        details: ["Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"]
       }
     ]
   },
