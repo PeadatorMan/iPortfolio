@@ -2,6 +2,40 @@ import { ResumeItem } from './types';
 
 export const RESUME_EXPERIENCE: ResumeItem[] = [
   {
+    title: 'Look Like Developer',
+    subtitle: 'Look Like Developer, Wang Thonglang, BKK',
+    duration: '2020 - 2025',
+    description: [
+      'Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).',
+      "Consistently applied best practices for writing clean, secure, readable, and scalable code.",
+      "Worked with other departments to address improvements, internal tools, and implementation issues. ",
+      'Skilled in using Node.js, Nextjs, Vite, Nuxtjs, Nestjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, Prisma, PostgreSQL, Redis, Docker, Git, GitHub, GitLab for design and prototyping.',
+      'Recommended and consulted with clients on the most appropriate graphic design'
+    ],
+    projects: [
+      {
+        projectName: "promptpedia",
+        client: "365liveitup",
+        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
+        details: ["Developed and designed front end web architecture with high responsiveness of applications", "Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
+        link: "https://promptpedia.365liveitup.com/"
+      },
+      {
+        projectName: "Ecommerce Platform Redesign",
+        client: "ShopEZ",
+        framework: "Sketch, InVision",
+        details: ["Revamped the user journey for a major e-commerce retailer, improving checkout conversion by 15%."]
+      },
+      {
+        projectName: "promptpedia",
+        client: "365liveitup",
+        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
+        details: ["Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
+        link: "https://promptpedia.365liveitup.com/"
+      }
+    ]
+  },
+  {
     title: 'Senior Graphic Design Specialist and Fullstack Developer',
     subtitle: 'Spark Solutions Co.,Ltd, Kannayo, BKK',
     duration: '2019 - 2025',
@@ -64,40 +98,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
       }
     ]
   },
-  {
-    title: 'Look Like Developer',
-    subtitle: 'Look Like Developer, Wang Thonglang, BKK',
-    duration: '2020 - 2025',
-    description: [
-      'Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).',
-      "Consistently applied best practices for writing clean, secure, readable, and scalable code.",
-      "Worked with other departments to address improvements, internal tools, and implementation issues. ",
-      'Skilled in using Node.js, Nextjs, Vite, Nuxtjs, Nestjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, Prisma, PostgreSQL, Redis, Docker, Git, GitHub, GitLab for design and prototyping.',
-      'Recommended and consulted with clients on the most appropriate graphic design'
-    ],
-    projects: [
-      {
-        projectName: "promptpedia",
-        client: "365liveitup",
-        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
-        details: ["Developed and designed front end web architecture with high responsiveness of applications", "Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
-        link: "https://promptpedia.365liveitup.com/"
-      },
-      {
-        projectName: "Ecommerce Platform Redesign",
-        client: "ShopEZ",
-        framework: "Sketch, InVision",
-        details: ["Revamped the user journey for a major e-commerce retailer, improving checkout conversion by 15%."]
-      },
-      {
-        projectName: "promptpedia",
-        client: "365liveitup",
-        framework: "Fullstack Developer, UX/UI Designer, Project Manager, Data Analyst",
-        details: ["Node.js, Nextjs, TypeScript, Tailwind CSS, Supabase, OpenAI API, Gemini API, N8N, MongoDB, PostgreSQL, Redis, Docker, Git, GitHub, GitLab", "Developed a fully functional cross-platform memory training application prototype using"],
-        link: "https://promptpedia.365liveitup.com/"
-      }
-    ]
-  },
+
   {
     title: 'Frontend Developer',
     subtitle: 'Digital New Age Agency Co.,Ltd., Bangkok, Thailand',
