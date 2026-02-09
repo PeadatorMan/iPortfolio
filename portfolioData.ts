@@ -33,6 +33,26 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
+    id: "23",
+    title: "Toyota Hybrid Synergy Drive",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-022.jpg",
+    description: "Toyota Hybrid Synergy Drive.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/toyota/HSD" }
+    ]
+  },
+  {
+    id: "24",
+    title: "Toyota Yaris Ativ",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-023.jpg",
+    description: "Toyota Yaris Ativ.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/toyota/ATIV" }
+    ]
+  },
+  {
     id: "2",
     title: "30th AIS Celebrate 2020",
     category: "web",
@@ -164,83 +184,62 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: "17",
-    title: "Photography Portfolio",
+    title: "AIS Lawson",
     category: "web",
-    image: "https://picsum.photos/seed/17/600/400",
-    description: "Gallery-focused website to showcase professional photography work.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-016.jpg",
+    description: "AIS Lawson.",
     links: [
-      { label: "View Gallery", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/Lawson" }
     ]
   },
   {
     id: "18",
-    title: "Coffee Shop Loyalty Card",
-    category: "card",
-    image: "https://picsum.photos/seed/18/600/400",
-    description: "Stamp card and loyalty program design for a specialty coffee shop.",
+    title: "AIS Serenade Happening Concert",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-017.jpg",
+    description: "AIS Serenade Happening Concert.",
     links: [
-      { label: "Mockup", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/serenadeHappeningConcert" }
     ]
   },
   {
     id: "19",
-    title: "Task Management Tool",
-    category: "app",
-    image: "https://picsum.photos/seed/19/600/400",
-    description: "Productivity app designed to help teams collaborate on projects.",
+    title: "AIS Serenade Happening Concert : Rock Mountain",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-018.jpg",
+    description: "AIS Serenade Happening Concert : Rock Mountain.",
     links: [
-      { label: "Product Page", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/rockmountain" }
     ]
   },
   {
     id: "20",
-    title: "Non-Profit Organization",
+    title: "AIS Serenade Happening Concert : Potato",
     category: "web",
-    image: "https://picsum.photos/seed/20/600/400",
-    description: "Donation portal and information site for an environmental NGO.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-019.jpg",
+    description: "AIS Serenade Happening Concert : Potato.",
     links: [
-      { label: "Donate", url: "#" },
-      { label: "Learn More", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/potato" }
     ]
   },
   {
     id: "21",
-    title: "Freelancer Identity",
-    category: "card",
-    image: "https://picsum.photos/seed/21/600/400",
-    description: "Personal branding and business card for a freelance graphic designer.",
+    title: "AIS Serenade Happening Concert : The Lion King",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-020.jpg",
+    description: "AIS Serenade Happening Concert : The Lion King.",
     links: [
-      { label: "My Profile", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/lionking" }
     ]
   },
   {
     id: "22",
-    title: "Recipe Finder App",
-    category: "app",
-    image: "https://picsum.photos/seed/22/600/400",
-    description: "Cooking companion app with ingredient search and step-by-step guides.",
-    links: [
-      { label: "Play Store", url: "#" }
-    ]
-  },
-  {
-    id: "23",
-    title: "SaaS Landing Page",
+    title: "AIS Serenade Happening Concert : The Rock Power Concert",
     category: "web",
-    image: "https://picsum.photos/seed/23/600/400",
-    description: "Conversion-optimized landing page for a new software product.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-021.jpg",
+    description: "AIS Serenade Happening Concert : The Rock Power Concert.",
     links: [
-      { label: "View Landing", url: "#" }
-    ]
-  },
-  {
-    id: "24",
-    title: "Gym Membership Card",
-    category: "card",
-    image: "https://picsum.photos/seed/24/600/400",
-    description: "Durable and energetic membership card design for a fitness center.",
-    links: [
-      { label: "Client Site", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/therockpower" }
     ]
   },
   {
