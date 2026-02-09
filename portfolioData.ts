@@ -9,7 +9,27 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: "Web Application: Public Sector Audit Evaluation Committee (PAEC) ระบบสารสนเทศการตรวจสอบและประเมินผลภาคราชการ.",
     links: [
       { label: "Launch", url: "https://paec.opdc.go.th/" },
-      { label: "Live Demo", url: "https://paec.opdc.go.th/" }
+      { label: "Live Demo (This content is unavailable due to data security concerns)", url: "https://paec.opdc.go.th/" }
+    ]
+  },
+  {
+    id: "15",
+    title: "PROMPTPEDIA AI IMAGE GENERATOR",
+    category: "app",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-014.jpg",
+    description: "PROMPTPEDIA AI IMAGE GENERATOR.",
+    links: [
+      { label: "Live Demo", url: "https://promptpedia.365liveitup.space/" }
+    ]
+  },
+  {
+    id: "16",
+    title: "Web Application: Office of the National Security Council",
+    category: "app",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-015.jpg",
+    description: "Web Application Office of the National Security Council.",
+    links: [
+      { label: "Preview Frontend Only (This content is unavailable due to data security concerns)", url: "https://www.nsc.go.th/" }
     ]
   },
   {
@@ -44,9 +64,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: "5",
-    title: "AIS eBill ePay eReceipt",
+    title: "AIS eBill ePay eReceipt 4K",
     category: "web",
-    image: "https://cv.365liveitup.space/img/portfolio/port-img-004.jpg",
+    image: "https://cv.365liveitup.space/img/portfolio/ais-ebill.jpg",
     description: "AIS eBill ePay eReceipt.",
     links: [
       { label: "Live Demo", url: "https://everyday.365liveitup.space/eOnline/" }
@@ -54,115 +74,92 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: "6",
-    title: "Bakery Branding Kit",
-    category: "card",
-    image: "https://picsum.photos/seed/6/600/400",
-    description: "Playful business card and packaging design for a local bakery.",
+    title: "AIS VR 4K",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-005.jpg",
+    description: "AIS VR 4K.",
     links: [
-      { label: "View Gallery", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/VR4K/" }
     ]
   },
   {
     id: "7",
-    title: "Smart Home Controller",
-    category: "app",
-    image: "https://picsum.photos/seed/7/600/400",
-    description: "IoT dashboard allowing users to control lights, temperature, and security.",
+    title: "AIS Smart IoT",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/ais-iot.jpg",
+    description: "AIS Smart IoT",
     links: [
-      { label: "App Store", url: "#" },
-      { label: "Website", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/smartIoT/" }
     ]
   },
   {
     id: "8",
-    title: "Corporate Finance Dashboard",
+    title: "myAIS Applications",
     category: "web",
-    image: "https://picsum.photos/seed/8/600/400",
-    description: "Data visualization platform for enterprise financial reporting.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-007.jpg",
+    description: "myAIS Applications",
     links: [
-      { label: "Live Preview", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/myAIS/" }
     ]
   },
   {
     id: "9",
-    title: "Consultant Business Card",
-    category: "card",
-    image: "https://picsum.photos/seed/9/600/400",
-    description: "Elegant and professional business card design for legal consultants.",
+    title: "AIS SMART VEHICLES",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-008.jpg",
+    description: "AIS NB-IOT Motor Tracker",
     links: [
-      { label: "Behance", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/MotorTracker/" }
     ]
   },
   {
     id: "10",
-    title: "Music Streaming App",
-    category: "app",
-    image: "https://picsum.photos/seed/10/600/400",
-    description: "Concept UI for a music streaming service with social features.",
+    title: "AIS ZEED SIMs",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-009.jpg",
+    description: "AIS ZEED SIMs",
     links: [
-      { label: "Figma", url: "#" },
-      { label: "Dribbble", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/zeed/" }
     ]
   },
   {
     id: "11",
-    title: "E-Learning Platform",
+    title: "AIS ZEED SIMs",
     category: "web",
-    image: "https://picsum.photos/seed/11/600/400",
-    description: "Interactive educational website featuring video courses and quizzes.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-010.jpg",
+    description: "AIS ZEED SIMs",
     links: [
-      { label: "Visit Site", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/zeed/zeedsim" }
     ]
   },
   {
     id: "12",
-    title: "Restaurant Menu Design",
-    category: "card",
-    image: "https://picsum.photos/seed/12/600/400",
-    description: "Menu and business card design for a high-end Italian restaurant.",
+    title: "AIS ZEED SIMs Uzeed",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-011.jpg",
+    description: "AIS ZEED SIMs Uzeed",
     links: [
-      { label: "View PDF", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/zeed/uzeed" }
     ]
   },
   {
     id: "13",
-    title: "Meditation Guide App",
-    category: "app",
-    image: "https://picsum.photos/seed/13/600/400",
-    description: "Calming interface design for a mindfulness and meditation application.",
+    title: "สิทธิพิเศษ สำหรับลูกค้าเอไอเอส Galaxy S10e S10 S10+",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-012.jpg",
+    description: "สิทธิพิเศษ สำหรับลูกค้าเอไอเอส Galaxy S10e S10 S10+ With Games of Thrones",
     links: [
-      { label: "App Store", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/GOT8" }
     ]
   },
   {
     id: "14",
-    title: "Real Estate Listings",
+    title: "The Lorious Experience of The Grand Royal Barge Procession",
     category: "web",
-    image: "https://picsum.photos/seed/14/600/400",
-    description: "Property search engine with map integration for real estate agents.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-013.jpg",
+    description: "The Lorious Experience of The Grand Royal Barge Procession",
     links: [
-      { label: "Live Demo", url: "#" },
-      { label: "Source Code", url: "#" }
-    ]
-  },
-  {
-    id: "15",
-    title: "Fashion Boutique Card",
-    category: "card",
-    image: "https://picsum.photos/seed/15/600/400",
-    description: "Chic and stylish business card for a boutique clothing store.",
-    links: [
-      { label: "Pinterest", url: "#" }
-    ]
-  },
-  {
-    id: "16",
-    title: "Crypto Wallet App",
-    category: "app",
-    image: "https://picsum.photos/seed/16/600/400",
-    description: "Secure and user-friendly mobile wallet for managing cryptocurrency assets.",
-    links: [
-      { label: "Secure Link", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/GrandRoyal" }
     ]
   },
   {
