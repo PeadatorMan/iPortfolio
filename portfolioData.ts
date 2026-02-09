@@ -13,13 +13,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
-    id: "15",
-    title: "PROMPTPEDIA AI IMAGE GENERATOR",
-    category: "app",
-    image: "https://cv.365liveitup.space/img/portfolio/port-img-014.jpg",
-    description: "PROMPTPEDIA AI IMAGE GENERATOR.",
+    id: "25",
+    title: "กรรมการหมู่บ้าน (กรมการปกครอง)",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-024.jpg",
+    description: "กรรมการหมู่บ้าน.",
     links: [
-      { label: "Live Demo", url: "https://promptpedia.365liveitup.space/" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/kummakarnmoobaan" }
     ]
   },
   {
@@ -30,6 +30,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: "Web Application Office of the National Security Council.",
     links: [
       { label: "Preview Frontend Only (This content is unavailable due to data security concerns)", url: "https://www.nsc.go.th/" }
+    ]
+  },
+  {
+    id: "15",
+    title: "PROMPTPEDIA AI IMAGE GENERATOR",
+    category: "app",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-014.jpg",
+    description: "PROMPTPEDIA AI IMAGE GENERATOR.",
+    links: [
+      { label: "Live Demo", url: "https://promptpedia.365liveitup.space/" }
     ]
   },
   {
@@ -193,6 +203,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
+    id: "26",
+    title: "AIS Serenade Airport Lounge",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-025.jpg",
+    description: "AIS Serenade Airport Lounge.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/airport" }
+    ]
+  },
+  {
     id: "18",
     title: "AIS Serenade Happening Concert",
     category: "web",
@@ -243,43 +263,23 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
-    id: "25",
-    title: "Language Learning App",
-    category: "app",
-    image: "https://picsum.photos/seed/25/600/400",
-    description: "Gamified mobile application for learning new languages.",
-    links: [
-      { label: "Demo Video", url: "#" }
-    ]
-  },
-  {
-    id: "26",
-    title: "Online Magazine",
-    category: "web",
-    image: "https://picsum.photos/seed/26/600/400",
-    description: "Editorial layout for a digital lifestyle and fashion magazine.",
-    links: [
-      { label: "Read Issue", url: "#" }
-    ]
-  },
-  {
     id: "27",
-    title: "Event Pass Design",
-    category: "card",
-    image: "https://picsum.photos/seed/27/600/400",
-    description: "VIP access badge and lanyard design for a tech conference.",
+    title: "AIS Aunjai GOLD",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-026.jpg",
+    description: "AIS Aunjai GOLD.",
     links: [
-      { label: "Event Photos", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/ais_aunjaigold" }
     ]
   },
   {
     id: "28",
-    title: "Weather Forecast App",
-    category: "app",
-    image: "https://picsum.photos/seed/28/600/400",
-    description: "Beautifully animated weather application with hyper-local data.",
+    title: "AIS Serenade Mandarin Oriental",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-027.jpg",
+    description: "AIS Serenade Mandarin Oriental.",
     links: [
-      { label: "WeatherAPI", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/mandarin" }
     ]
   },
   {
