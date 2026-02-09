@@ -18,7 +18,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'hero', label: 'Home', icon: <Home size={20} /> },
   { id: 'about', label: 'About', icon: <User size={20} /> },
   { id: 'resume', label: 'Resume', icon: <FileText size={20} /> },
-  // { id: 'portfolio', label: 'Portfolio', icon: <BookOpen size={20} /> },
+  { id: 'portfolio', label: 'Portfolio', icon: <BookOpen size={20} /> },
   { id: 'services', label: 'Services', icon: <Server size={20} /> },
   { id: 'contact', label: 'Contact', icon: <Mail size={20} /> },
 ];
@@ -26,10 +26,17 @@ export const MENU_ITEMS: MenuItem[] = [
 export const SKILLS: Skill[] = [
   { name: 'HTML', level: 100 },
   { name: 'CSS', level: 90 },
-  { name: 'JavaScript', level: 75 },
-  { name: 'React', level: 85 },
-  { name: 'TypeScript', level: 80 },
-  { name: 'Tailwind CSS', level: 95 },
+  { name: 'PHP, Laravel, CodeIgniter', level: 95 },
+  { name: 'Angular', level: 85 },
+  { name: 'React, Node.js', level: 95 },
+  { name: 'Next.js, Nest.js, Vue.js, Vite', level: 95 },
+  { name: 'TypeScript, JavaScript', level: 80 },
+  { name: 'Tailwind CSS, Bootstrap', level: 95 },
+  { name: 'Wordpress, Shopify, Magento', level: 95 },
+  { name: 'SQL, NoSQL, Firebase', level: 90 },
+  { name: 'MongoDB, MySQL, PostgreSQL', level: 90 },
+  { name: 'Photoshop, Illustrator', level: 75 },
+  { name: 'Windows, macOS', level: 95 },
 ];
 
 export const RESUME_EDUCATION: ResumeItem[] = [
