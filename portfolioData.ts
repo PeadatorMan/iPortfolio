@@ -3,56 +3,53 @@ import { PortfolioItem } from './types';
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "1",
-    title: "Eco-Friendly Market App",
+    title: "Public Sector Audit Evaluation Committee (PAEC)",
     category: "app",
-    image: "https://picsum.photos/seed/1/600/400",
-    description: "A mobile marketplace connecting local farmers with eco-conscious consumers.",
+    image: "https://cv.365liveitup.space/img/portfolio/portfolio-1.jpg",
+    description: "Web Application: Public Sector Audit Evaluation Committee (PAEC) ระบบสารสนเทศการตรวจสอบและประเมินผลภาคราชการ.",
     links: [
-      { label: "App Store", url: "#" },
-      { label: "Google Play", url: "#" }
+      { label: "Launch", url: "https://paec.opdc.go.th/" },
+      { label: "Live Demo", url: "https://paec.opdc.go.th/" }
     ]
   },
   {
     id: "2",
-    title: "Modern Architecture Web",
+    title: "30th AIS Celebrate 2020",
     category: "web",
-    image: "https://picsum.photos/seed/2/600/400",
-    description: "Minimalist portfolio website designed for a leading architecture firm.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-001.jpg",
+    description: "30th AIS Celebrate 2020.",
     links: [
-      { label: "Live Demo", url: "#" },
-      { label: "Case Study", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/30thCelebrate2020/" }
     ]
   },
   {
     id: "3",
-    title: "Tech Startup Identity",
-    category: "card",
-    image: "https://picsum.photos/seed/3/600/400",
-    description: "Business card and branding package for a cybersecurity startup.",
+    title: "ฉลองก้าวเข้าสู่ปีที่ 30 กับ AIS Points",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-002.jpg",
+    description: "ฉลองก้าวเข้าสู่ปีที่ 30 กับ AIS Points.",
     links: [
-      { label: "View Design", url: "#" },
-      { label: "Download Mockup", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/AIS30th/" }
     ]
   },
   {
     id: "4",
-    title: "Fitness Tracker UI",
-    category: "app",
-    image: "https://picsum.photos/seed/4/600/400",
-    description: "User interface design for a health and fitness tracking application.",
+    title: "AIS 5G PLAY AR",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-003.jpg",
+    description: "AIS 5G PLAY AR. AIS The feature of Reality.",
     links: [
-      { label: "View Prototype", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/AR/" }
     ]
   },
   {
     id: "5",
-    title: "Travel Agency Portal",
+    title: "AIS eBill ePay eReceipt",
     category: "web",
-    image: "https://picsum.photos/seed/5/600/400",
-    description: "Booking engine and destination showcase for a luxury travel agency.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-004.jpg",
+    description: "AIS eBill ePay eReceipt.",
     links: [
-      { label: "Live Demo", url: "#" },
-      { label: "Github", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/eOnline/" }
     ]
   },
   {
