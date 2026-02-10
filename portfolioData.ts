@@ -43,6 +43,36 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
+    id: "34",
+    title: "TOPPO Vote",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-033.jpg",
+    description: "TOPPO Vote.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/ToppoVote" }
+    ]
+  },
+  {
+    id: "36",
+    title: "Laurier My Brand",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/laurierMyBrand.jpg",
+    description: "Laurier My Brand.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/laurierMyBrand" }
+    ]
+  },
+  {
+    id: "37",
+    title: "Gear S3 frontier",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
+    description: "Gear S3 frontier.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+    ]
+  },
+  {
     id: "23",
     title: "Toyota Hybrid Synergy Drive",
     category: "web",
@@ -333,13 +363,34 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
-    id: "34",
-    title: "AIS one 2 Call Concert",
+    id: "35",
+    title: "TOYOTA VIGO off road",
     category: "web",
-    image: "https://cv.365liveitup.space/img/portfolio/port-img-029.jpg",
-    description: "AIS one 2 Call Concert.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-034.jpg",
+    description: "TOYOTA VIGO off road.",
     links: [
-      { label: "Live Demo", url: "https://everyday.365liveitup.space/one2callConcert" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/vigo_offroad" }
     ]
   },
+  {
+    id: "38",
+    title: "Gear S3 frontier",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
+    description: "Gear S3 frontier.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+    ]
+  },
+  {
+    id: "39",
+    title: "Gear S3 frontier",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
+    description: "Gear S3 frontier.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+    ]
+  },
+
 ];
