@@ -209,7 +209,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     image: "https://cv.365liveitup.space/img/portfolio/port-img-025.jpg",
     description: "AIS Serenade Airport Lounge.",
     links: [
-      { label: "Live Demo", url: "https://everyday.365liveitup.space/airport" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/privilegeAirport" }
     ]
   },
   {
@@ -284,22 +284,62 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: "29",
-    title: "Blog Template",
+    title: "Move to AIS",
     category: "web",
-    image: "https://picsum.photos/seed/29/600/400",
-    description: "Clean and readable blog theme for content creators.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-028.jpg",
+    description: "Move to AIS.",
     links: [
-      { label: "Theme Demo", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/move-to-ais" }
     ]
   },
   {
     id: "30",
-    title: "Artist Business Card",
-    category: "card",
-    image: "https://picsum.photos/seed/30/600/400",
-    description: "Creative and textured business card for a fine art painter.",
+    title: "AIS Points Lucky Draw",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-030.jpg",
+    description: "AIS Points Lucky Draw.",
     links: [
-      { label: "Artist Portfolio", url: "#" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/pointsLuckydraw" }
     ]
-  }
+  },
+  {
+    id: "31",
+    title: "AIS one 2 Call Concert",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-029.jpg",
+    description: "AIS one 2 Call Concert.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/one2callConcert" }
+    ]
+  },
+  {
+    id: "32",
+    title: "AIS Samsung Z Flow 2",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-031.jpg",
+    description: "AIS Samsung Z Flow 2.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/SamSungZFold2/specification.html" }
+    ]
+  },
+  {
+    id: "33",
+    title: "AIS Serenade Travel",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-032.jpg",
+    description: "AIS Serenade Travel.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/serenadetravel" }
+    ]
+  },
+  {
+    id: "34",
+    title: "AIS one 2 Call Concert",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-029.jpg",
+    description: "AIS one 2 Call Concert.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/one2callConcert" }
+    ]
+  },
 ];
