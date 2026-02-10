@@ -372,25 +372,25 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       { label: "Live Demo", url: "https://everyday.365liveitup.space/vigo_offroad" }
     ]
   },
-  {
-    id: "38",
-    title: "Gear S3 frontier",
-    category: "web",
-    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
-    description: "Gear S3 frontier.",
-    links: [
-      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
-    ]
-  },
-  {
-    id: "39",
-    title: "Gear S3 frontier",
-    category: "web",
-    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
-    description: "Gear S3 frontier.",
-    links: [
-      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
-    ]
-  },
+  // {
+  //   id: "38",
+  //   title: "Gear S3 frontier",
+  //   category: "web",
+  //   image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
+  //   description: "Gear S3 frontier.",
+  //   links: [
+  //     { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+  //   ]
+  // },
+  // {
+  //   id: "39",
+  //   title: "Gear S3 frontier",
+  //   category: "web",
+  //   image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
+  //   description: "Gear S3 frontier.",
+  //   links: [
+  //     { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+  //   ]
+  // },
 
 ];
