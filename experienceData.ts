@@ -101,7 +101,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
   {
     title: 'Frontend Developer',
     subtitle: 'Digital New Age Agency Co.,Ltd., Bangkok, Thailand',
-    duration: '2003 - 2016',
+    duration: '2013 - 2020',
     description: [
       'Performed coding, debugging, and unit testing tasks in support of projects.',
       'Provided ongoing maintenance for assigned applications and systems.',
@@ -115,18 +115,115 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
     ],
     projects: [
       {
-        projectName: "Employee HR Portal",
-        client: "ABC Corp HR",
-        framework: "HTML5, CSS3, jQuery",
-        details: ["Assisted in the frontend development of the internal leave management system."],
-        link: "#"
+        projectName: "AIS Landing page And Campaign",
+        client: "AIS",
+        framework: "HTML5, CSS3, jQuery, Bootstrap, PHP, MySQL, AJAX, GSAP, PS, Illustrator, Animate.css",
+        details: [
+          "Assisted in the frontend development of the internal leave management system.",
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Project: AIS Webpage, AIS Campaign, AIS Landing Page, AIS Web Applications and many more 50+ landing pages and maintenance"
+        ],
+        link: "https://everyday.365liveitup.space/myAIS"
       },
       {
-        projectName: "Corporate Newsletter Template",
-        client: "Comms Team",
-        framework: "MJML, HTML Email",
-        details: ["Designed responsive email templates ensuring compatibility across all major email clients."],
-        link: "#"
+        projectName: "AIS Serenade Happening Concert",
+        client: "AIS",
+        framework: "HTML5, CSS3, jQuery, Bootstrap, PHP, MySQL, AJAX, GSAP, PS, Illustrator, Animate.css",
+        details: [
+          "All concert content and website maintenance, and System backend development",
+          "Assisted in the frontend development of the internal leave management system.",
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using"
+        ],
+        link: "https://everyday.365liveitup.space/serenadeHappeningConcert"
+      },
+      {
+        projectName: "enfababy content and website maintenance",
+        client: "EnfaGrow (Thailand)",
+        framework: "HTML5, CSS3, jQuery, Bootstrap, PHP, MySQL, AJAX, Animate.css",
+        details: [
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Maintain and upgrade existing web applications",
+          "Participated in daily stand-up meetings and agile workflows."
+        ],
+        link: "https://www.enfababy.com/"
+      },
+      {
+        projectName: "laurierMyBrand content and website maintenance",
+        client: "Laurier My Brand",
+        framework: "HTML5, CSS3, jQuery, Bootstrap, PHP, MySQL, AJAX, Animate.css",
+        details: [
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Maintain and upgrade existing web applications",
+          "Collaborated with senior developers to implement UI designs.",
+          "Participated in daily stand-up meetings and agile workflows."
+        ],
+        link: "https://everyday.365liveitup.space/laurierMyBrand"
+      },
+      {
+        projectName: "TOYOTA HSD",
+        client: "TOYOTA Motor (Thailand) Co., Ltd.",
+        framework: "HTML5, CSS3, jQuery, Bootstrap,3D animation, AJAX, Animate.css,GSAP",
+        details: [
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Maintain and upgrade existing web applications",
+          "Collaborated with senior developers to implement UI designs.",
+          "Participated in daily stand-up meetings and agile workflows."
+        ],
+        link: "https://everyday.365liveitup.space/toyota/HSD"
+      },
+      {
+        projectName: "TOYOTA Yaris ATIV",
+        client: "TOYOTA Motor (Thailand) Co., Ltd.",
+        framework: "HTML5, CSS3, jQuery, Bootstrap,3D animation, AJAX, Animate.css,GSAP",
+        details: [
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Maintain and upgrade existing web applications",
+          "Collaborated with senior developers to implement UI designs.",
+          "Participated in daily stand-up meetings and agile workflows."
+        ],
+        link: "https://everyday.365liveitup.space/toyota/ATIV"
+      },
+      {
+        projectName: "TOYOTA VIGO off road",
+        client: "TOYOTA Motor (Thailand) Co., Ltd.",
+        framework: "HTML5, CSS3, jQuery, Bootstrap,3D animation, AJAX, Animate.css,GSAP",
+        details: [
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Maintain and upgrade existing web applications",
+          "Collaborated with senior developers to implement UI designs.",
+          "Participated in daily stand-up meetings and agile workflows."
+        ],
+        link: "https://everyday.365liveitup.space/vigo_offroad"
+      },
+      {
+        projectName: "ToppoVote",
+        client: "TOPPO",
+        framework: "HTML5, CSS3, jQuery, Bootstrap,3D animation, AJAX, Animate.css,GSAP",
+        details: [
+          "Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Collaborated with senior developers to implement UI designs.",
+          "Participated in daily stand-up meetings and agile workflows."
+        ],
+        link: "https://everyday.365liveitup.space/ToppoVote"
+      },
+      {
+        projectName: "Samsung Gear S3",
+        client: "Samsung Electronics (Thailand) Co., Ltd.",
+        framework: "HTML5, CSS3, jQuery, Bootstrap,3D animation, AJAX, Animation, Animate.css,GSAP",
+        details: ["Developed and designed front end web architecture with high responsiveness of applications",
+          "Developed a fully functional cross-platform memory training application prototype using",
+          "Collaborated with senior developers to implement UI designs.",
+          "Participated in daily stand-up meetings and agile workflows."
+        ],
+        link: "https://everyday.365liveitup.space/gear-s3"
       }
     ]
   },
@@ -145,9 +242,16 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
       {
         projectName: "Programming, Web Desing And Graphics Design",
         client: "Suan Dusit Rajabhat University",
-        framework: "SEO, PHP, MySQL, PhotoShop, Illustrator, and other application for design",
+        framework: "JavaScript, jQuery, HTML5, CSS, SEO, PHP, MySQL, PhotoShop, Illustrator, and other application for design",
         details: ["Designed print-ready menus and promotional flyers for a local startup.", "Developed Web Application E-Profile: Suan Dusit Rajabhat University."],
-        link: "http://www.sdu.ac.th"
+        link: "https://www.dusit.ac.th"
+      },
+      {
+        projectName: "student affairs",
+        client: "Chulalongkorn University",
+        framework: "JavaScript, jQuery, HTML5, CSS, PHP, MySQL, PhotoShop, Illustrator, and other application for design",
+        details: ["Designed print-ready menus and promotional flyers for a local startup.", "Developed Web Application E-document: Student Affairs, Chulalongkorn University."],
+        link: "https://www.sa.chula.ac.th"
       }
     ]
   }
