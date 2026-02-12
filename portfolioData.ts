@@ -484,24 +484,72 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: "49",
-    title: "Gear S3 frontier",
+    title: "AIS Serenade Happening Concert : water war music festival",
     category: "web",
-    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
-    description: "Gear S3 frontier.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-048.jpg",
+    description: "AIS Serenade Happening Concert : water war music festival.",
     links: [
-      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/waterwar" }
     ]
   },
   {
     id: "50",
-    title: "Gear S3 frontier",
+    title: "AIS Serenade Happening Concert :  Whitehaus",
     category: "web",
-    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
-    description: "Gear S3 frontier.",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-049x.jpg",
+    description: "AIS Serenade Happening Concert :  Whitehaus.",
     links: [
-      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/whitehaus" }
     ]
   },
-
-
+  {
+    id: "51",
+    title: "AIS-Activity",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-050.jpg",
+    description: "AIS-Activity.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/AIS-Activity" }
+    ]
+  },
+  {
+    id: "52",
+    title: "AIS Fibre",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-051.jpg",
+    description: "AIS Fibre.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/fibre" }
+    ]
+  },
+  {
+    id: "53",
+    title: "AIS Speed toggle",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-052.jpg",
+    description: "AIS Speed toggle.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/speedtoggle" }
+    ]
+  },
+  {
+    id: "54",
+    title: "AIS Social Sim",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-053x.jpg",
+    description: "AIS Social Sim.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/SocialSim" }
+    ]
+  },
+  {
+    id: "55",
+    title: "AIS The One Sim",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-054x.jpg",
+    description: "AIS The One Sim.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/TheOneSim" }
+    ]
+  },
 ];
