@@ -63,6 +63,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
+    id: "39",
+    title: "laurier LAVA",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-038.jpg",
+    description: "laurier LAVA.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/laurierLAVA" }
+    ]
+  },
+  {
     id: "37",
     title: "Gear S3 frontier",
     category: "web",
@@ -70,6 +80,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     description: "Gear S3 frontier.",
     links: [
       { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+    ]
+  },
+  {
+    id: "38",
+    title: "LOTTE Xylitol",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-037.jpg",
+    description: "LOTTE Xylitol.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/xylitol" }
     ]
   },
   {
@@ -372,25 +392,116 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       { label: "Live Demo", url: "https://everyday.365liveitup.space/vigo_offroad" }
     ]
   },
-  // {
-  //   id: "38",
-  //   title: "Gear S3 frontier",
-  //   category: "web",
-  //   image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
-  //   description: "Gear S3 frontier.",
-  //   links: [
-  //     { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
-  //   ]
-  // },
-  // {
-  //   id: "39",
-  //   title: "Gear S3 frontier",
-  //   category: "web",
-  //   image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
-  //   description: "Gear S3 frontier.",
-  //   links: [
-  //     { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
-  //   ]
-  // },
+  {
+    id: "40",
+    title: "samsung galaxy view",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-039.jpg",
+    description: "samsung galaxy view.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/samsunggalaxyview" }
+    ]
+  },
+  {
+    id: "41",
+    title: "samsung note 7",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-040.jpg",
+    description: "samsung note 7.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/samsungnote7" }
+    ]
+  },
+  {
+    id: "42",
+    title: "AIS TRIP : NAN",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-041.jpg",
+    description: "AIS TRIP : NAN.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/aistrip/trip_new" }
+    ]
+  },
+  {
+    id: "43",
+    title: "AIS Serenade Happening Concert : byrdandheart",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-042.jpg",
+    description: "AIS Serenade Happening Concert : byrdandheart.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/byrdandheart" }
+    ]
+  },
+  {
+    id: "44",
+    title: "AIS Serenade Happening Concert : lord lai mungkorn",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-044.jpg",
+    description: "AIS Serenade Happening Concert : lord lai mungkorn.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/lordlaimungkorn" }
+    ]
+  },
+  {
+    id: "45",
+    title: "Blackmores : Hello winter!",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-043.jpg",
+    description: "Blackmores : Hello winter!.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/blackmores" }
+    ]
+  },
+  {
+    id: "46",
+    title: "AIS Serenade Happening Concert : Body Slam Fest",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-045.jpg",
+    description: "AIS Serenade Happening Concert : Body Slam Fest.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/bodyslam" }
+    ]
+  },
+  {
+    id: "47",
+    title: "AIS Serenade Happening Concert : bunlang make 2019",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-046.jpg",
+    description: "AIS Serenade Happening Concert : bunlang make 2019.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/bunlangmake2019" }
+    ]
+  },
+  {
+    id: "48",
+    title: "AIS Serenade Happening Concert : peck love in space",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-047.jpg",
+    description: "AIS Serenade Happening Concert : peck love in space.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/peckloveinspace" }
+    ]
+  },
+  {
+    id: "49",
+    title: "Gear S3 frontier",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
+    description: "Gear S3 frontier.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+    ]
+  },
+  {
+    id: "50",
+    title: "Gear S3 frontier",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-036.jpg",
+    description: "Gear S3 frontier.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/gear-s3" }
+    ]
+  },
+
 
 ];
