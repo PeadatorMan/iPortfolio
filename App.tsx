@@ -62,7 +62,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       <div className="relative z-10" data-aos="fade-in">
-        <h1 className="text-5xl md:text-6xl font-bold font-heading mb-4 tracking-tighter"><span className="text-[#111111] text-[4rem] md:text-[5rem] tracking-[-0.08em]">Black</span>BUNNY</h1>
+        <h1 className="text-5xl md:text-6xl font-bold font-heading mb-4 tracking-tighter"><span className="text-[5rem] md:text-[6rem] tracking-[-0.08em] text-black drop-shadow-[1px_0px_0px_#ffffff]">Black</span> BUNNY</h1>
         <p className="text-xl md:text-3xl font-display">
           I'm <span className="border-b-2 border-primary pb-1 typing-cursor">{text}</span>
         </p>
