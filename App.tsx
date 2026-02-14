@@ -89,7 +89,7 @@ const About = () => {
       <SectionHeader title="About" description={PROFILE_DATA.aboutShort} />
       <div className="grid md:grid-cols-12 gap-10">
         <div className="md:col-span-4">
-          <img src="./img/user_photo.jpg" alt="Profile" className="w-full rounded shadow-lg" />
+          <img src="./img/avatar.jpg" alt="Profile" className="w-full rounded" />
         </div>
         <div className="md:col-span-8">
           <h3 className="text-2xl font-bold text-secondary mb-4 font-heading">UI/UX Designer & Fullstack Developer.</h3>

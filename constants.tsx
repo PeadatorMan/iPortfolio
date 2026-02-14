@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, User, FileText, BookOpen, Server, Mail, Twitter, Facebook, Instagram, Linkedin, Github } from 'lucide-react';
+import { Home, User, FileText, BookOpen, Server, Mail, Twitter, Facebook, Instagram, Linkedin, Github, Cloud, Database, MonitorCog } from 'lucide-react';
 import { MenuItem, ResumeItem, PortfolioItem, ServiceItem, Testimonial, Skill } from './types';
 
 // Re-export data from separate files
@@ -79,9 +79,9 @@ export const SERVICES: ServiceItem[] = [
   { icon: <BookOpen />, title: 'End-to-End Application Development', description: 'Designing and building both client-side and server-side components from scratch.' },
   { icon: <FileText />, title: 'Web & API Development', description: 'Creating RESTful APIs, microservices, and server-side logic using Node.js, PHP (Laravel), Java (Spring Boot), and Type Script' },
   { icon: <Server />, title: 'Front-End Development', description: 'Building responsive, interactive, and user-friendly interfaces using React, Vue.js, Angular, and Next.js.' },
-  { icon: <BookOpen />, title: 'System Integration & Architecture', description: 'Designing complex system architectures and connecting third-party services.' },
-  { icon: <FileText />, title: 'Database Design & Management', description: 'Managing relational and non-relational databases, including MySQL, PostgreSQL, MongoDB, and Firebase.' },
-  { icon: <Server />, title: 'DevOps & Cloud Deployment', description: 'Managing CI/CD pipelines, Docker, Kubernetes, and cloud services (AWS, Google Cloud, Azure).' },
+  { icon: <MonitorCog />, title: 'System Integration & Architecture', description: 'Designing complex system architectures and connecting third-party services.' },
+  { icon: <Database />, title: 'Database Design & Management', description: 'Managing relational and non-relational databases, including MySQL, PostgreSQL, MongoDB, and Firebase.' },
+  { icon: <Cloud />, title: 'DevOps & Cloud Deployment', description: 'Managing CI/CD pipelines, Docker, Kubernetes, and cloud services (AWS, Google Cloud, Azure).' },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
