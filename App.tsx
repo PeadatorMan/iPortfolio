@@ -12,6 +12,22 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
+  const bgImages = [
+    './img/bg/bg-new1.jpg',
+    './img/bg/bg-new2.jpg',
+    './img/bg/bg-new3.jpg',
+    './img/bg/bg-new4.jpg'
+  ];
+  const [currentBgIndex, setCurrentBgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBgIndex((prevIndex) => (prevIndex + 1) % bgImages.length);
+    }, 60000); // 1 minutes
+
+    return () => clearInterval(interval);
+  }, []);
+
   const roles = PROFILE_DATA.role;
 
   useEffect(() => {
@@ -39,7 +55,11 @@ const Hero = () => {
   }, [text, isDeleting, loopNum, roles, typingSpeed]);
 
   return (
-    <section id="hero" className="w-full h-screen bg-[url('./img/bg-new.jpg')] bg-cover bg-[-75%_0px] md:bg-center relative flex flex-col justify-center text-white px-4 md:pl-[350px]">
+    <section
+      id="hero"
+      className="w-full h-screen bg-cover bg-[-75%_0px] md:bg-center relative flex flex-col justify-center text-white px-4 md:pl-[350px] transition-all duration-1000 ease-in-out"
+      style={{ backgroundImage: `url('${bgImages[currentBgIndex]}')` }}
+    >
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       <div className="relative z-10" data-aos="fade-in">
         <h1 className="text-5xl md:text-6xl font-bold font-heading mb-4 tracking-tighter"><span className="text-[#111111] text-[4rem] md:text-[5rem] tracking-[-0.08em]">Black</span>BUNNY</h1>
