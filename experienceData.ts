@@ -241,7 +241,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
     projects: [
       {
         projectName: "Programming, Web Desing And Graphics Design",
-        client: "Suan Dusit Rajabhat University",
+        client: "Suan Dusit University",
         framework: "JavaScript, jQuery, HTML5, CSS, SEO, PHP, MySQL, PhotoShop, Illustrator, and other application for design",
         details: ["Designed print-ready menus and promotional flyers for a local startup.", "Developed Web Application E-Profile: Suan Dusit Rajabhat University."],
         link: "https://www.dusit.ac.th"
