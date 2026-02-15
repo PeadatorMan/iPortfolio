@@ -25,7 +25,8 @@ export const MENU_ITEMS: MenuItem[] = [
 
 export const SKILLS: Skill[] = [
   { name: 'HTML', level: 100 },
-  { name: 'CSS', level: 90 },
+  { name: 'CSS [Tailwind CSS, Bootstrap, Material UI, Daisy UI, Animate.css]', level: 90 },
+  { name: 'GSAP, Animation', level: 85 },
   { name: 'PHP, Laravel, CodeIgniter', level: 95 },
   { name: 'Angular', level: 85 },
   { name: 'React, Node.js', level: 95 },
@@ -93,7 +94,14 @@ export const PROFILE_DATA = {
   name: "Ratchapon Nuch-Opas",
   role: ["Fullstack Developer", "UI/UX Designer", "WebDeveloper", "Freelancer"],
   aboutShort: "I am a passionate UX/UI designer and web developer based in Bangkok, Thailand.",
-  aboutLong: "Highly motivated recent graduate with a strong foundational knowledge in Full Stack Development, specializing in Angular, Node.js and modern JavaScript frameworks. Demonstrated ability to quickly design, develop, and debug robust web applications and mobile prototypes (Flutter). Eager to apply problem-solving skills and continuous learning aptitude to contribute immediately to challenging development projects. Unit Testing, Integration Testing, E2E Testing, Performance Testing, Security Testing, Accessibility Testing, Usability Testing, A/B Testing, Cross-Browser Testing, Mobile Testing, API Testing, Database Testing, Performance Testing, Security Testing, Accessibility Testing, Usability Testing, A/B Testing, UAT",
+  aboutLong: "Highly motivated recent graduate with a strong foundational knowledge in Full Stack Development," +
+    "specializing in Angular, Node.js and modern JavaScript frameworks. Demonstrated ability to quickly design, " +
+    "develop, and debug robust web applications and mobile prototypes (Flutter)." +
+    "Eager to apply problem-solving skills and continuous learning aptitude to contribute " +
+    "immediately to challenging development projects. " +
+    "Unit Testing, Integration Testing, " +
+    "UAT",
+  //"E2E Testing, Performance Testing, Security Testing, Accessibility Testing, Usability Testing, A/B Testing, Cross-Browser Testing, Mobile Testing, API Testing, Database Testing, Performance Testing, Security Testing, Accessibility Testing, Usability Testing, A/B Testing, UAT",
   email: "looklikelove@me.com",
   phone: "+66 61-524-6858",
   city: "Bangkok, Thailand",
