@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  iportfolio:
+    build:
+      context: ./ # Specify the path to the first project
+    ports:
+      - "3020:3000" # Map to a unique host port (e.g., 3000)
+    volumes:
+      - ./:/app # Mount the code for development (optional for production)
+      - /app/node_modules # Isolate node_modules to avoid host machine conflicts
+    container_name: iportfolio_container
+
+volumes:
+  vite-serv:
