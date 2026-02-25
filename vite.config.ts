@@ -5,10 +5,17 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
+    // server: {
+    //   port: 3020,
+    //   allowedHosts: ['cv.365liveitup.space'],
+    //   host: 'localhost:3020',
+    // },
     server: {
-      port: 3020,
+      host: true, // Enables external access
+      watch: { usePolling: true }, // Recommended for HMR in some containers
+      strictPort: true,
       allowedHosts: ['cv.365liveitup.space'],
-      host: 'localhost:3020',
+      port: 5173,
     },
     plugins: [react()],
     define: {
