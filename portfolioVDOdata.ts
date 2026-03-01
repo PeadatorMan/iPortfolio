@@ -11,14 +11,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       { label: "View", url: "https://www.youtube.com/watch?v=EW2s-7Sk7_o" },
     ]
   },
-  // {
-  //   id: "2",
-  //   title: "AIS The One Sim",
-  //   category: "VDO",
-  //   image: "https://cv.365liveitup.space/img/portfolio/port-img-054x.jpg",
-  //   description: "AIS The One Sim.",
-  //   links: [
-  //     { label: "Live Demo", url: "https://everyday.365liveitup.space/TheOneSim" }
-  //   ]
-  // },
+  {
+    id: "2",
+    title: "Google Nano Banana 2 และ Lyria ทำภาพและเพลงไวขึ้น 10x",
+    category: "VDO",
+    image: "https://cv.365liveitup.space/img/portfolio/portfolio-1.jpg",
+    description: "Google Nano Banana 2 และ Lyria ทำภาพและเพลงไวขึ้น 10x",
+    links: [
+      { label: "View", url: "https://www.youtube.com/shorts/ceM4nqwdSTo" },
+    ]
+  },
 ];

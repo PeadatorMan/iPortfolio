@@ -478,11 +478,12 @@ const Portfolio = () => {
   };
 
   const getEmbedUrl = (url: string) => {
-    // Convert regular YouTube URL to embed URL with autoplay
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    // Convert regular YouTube URL and Shorts to embed URL with autoplay and loop
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|shorts\/|\&v=)([^#\&\?]*).*/;
     const match = url.match(regExp);
     if (match && match[2].length === 11) {
-      return `https://www.youtube.com/embed/${match[2]}?autoplay=1`;
+      const videoId = match[2];
+      return `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`;
     }
     return url;
   };
@@ -555,14 +556,14 @@ const Portfolio = () => {
       {/* VDO Modal */}
       {vdoModalUrl && (
         <div className="fixed inset-0 z-[1000] bg-black/90 flex items-center justify-center p-4">
-          <div className="relative w-full max-w-5xl">
+          <div className={`relative w-full ${vdoModalUrl.includes('shorts/') ? 'max-w-[400px]' : 'max-w-5xl'}`}>
             <button
               onClick={() => setVdoModalUrl(null)}
-              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+              className={`absolute right-0 text-white hover:text-gray-300 transition-colors ${vdoModalUrl.includes('shorts/') ? '-top-10 sm:-right-12 sm:top-0' : '-top-10'}`}
             >
               <X size={32} />
             </button>
-            <div className="relative pt-[56.25%] w-full bg-black rounded shadow-2xl overflow-hidden">
+            <div className={`relative w-full bg-black rounded shadow-2xl overflow-hidden ${vdoModalUrl.includes('shorts/') ? 'pt-[177.78%]' : 'pt-[56.25%]'}`}>
               {/* Unmounting the iframe destroys the VDO automatically when closed */}
               <iframe
                 src={getEmbedUrl(vdoModalUrl)}
