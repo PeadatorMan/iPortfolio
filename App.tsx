@@ -452,6 +452,85 @@ const ModernCVTemplate = () => (
   </div>
 );
 
+const VirtualMasonryItem: React.FC<{ item: any; filter: string; onPlay: (url: string) => void }> = ({ item, filter, onPlay }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const [savedHeight, setSavedHeight] = useState<number | undefined>(undefined);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      } else {
+        if (containerRef.current) {
+          const height = containerRef.current.getBoundingClientRect().height;
+          if (height > 0) setSavedHeight(height);
+        }
+        setIsVisible(false);
+      }
+    }, { rootMargin: '600px' });
+
+    if (containerRef.current) observer.observe(containerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  let imageUrl = item.image;
+  if (item.category === 'VDO' && item.links && item.links.length > 0) {
+    const url = item.links[0].url;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|shorts\/|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    if (match && match[2].length === 11) {
+      imageUrl = `https://img.youtube.com/vi/${match[2]}/hqdefault.jpg`;
+    }
+  }
+
+  const virtualStyle = (!isVisible && savedHeight) ? { height: `${savedHeight}px` } : {};
+
+  return (
+    <div
+      ref={containerRef}
+      className={`group relative overflow-hidden rounded-lg shadow-md bg-white ${filter === 'VDO' ? 'break-inside-avoid shadow-none border-b shrink-0' : ''}`}
+      style={virtualStyle}
+    >
+      {isVisible && (
+        <>
+          <img src={imageUrl} alt={item.title} loading="lazy" className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${filter === 'VDO' ? 'h-auto rounded' : 'h-64'}`} />
+          <div className={`absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-4 text-center ${filter === 'VDO' ? 'rounded' : ''}`}>
+            <h4 className="text-xl font-bold mb-1">{item.title}</h4>
+            <p className="uppercase text-sm mb-4">{item.category}</p>
+            <div className="flex gap-3 justify-center text-center flex-wrap">
+              {item.links && item.links.map((link: any, i: number) => {
+                const isVdo = item.category === 'VDO';
+                return (
+                  <a
+                    key={i}
+                    href={isVdo ? "#" : link.url}
+                    target={isVdo ? "_self" : "_blank"}
+                    rel={isVdo ? "" : "noopener noreferrer"}
+                    onClick={(e) => {
+                      if (isVdo) {
+                        e.preventDefault();
+                        onPlay(link.url);
+                      }
+                    }}
+                    className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/40 rounded-full transition-colors text-xs font-medium backdrop-blur-sm"
+                    title={link.label}
+                  >
+                    <ExternalLink size={12} />
+                    {link.label}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
+
 const Portfolio = () => {
   const [filter, setFilter] = useState<'all' | 'app' | 'card' | 'web' | 'animation' | 'VDO'>('all');
   const [visibleCount, setVisibleCount] = useState(9); // Initial view count, fits 3x3 grid nicely
@@ -506,39 +585,9 @@ const Portfolio = () => {
         </ul>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className={filter === 'VDO' ? "columns-2 md:columns-4 lg:columns-6 gap-4 space-y-4" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"}>
         {displayedItems.map((item) => (
-          <div key={item.id} className="group relative overflow-hidden rounded-lg shadow-md bg-white">
-            <img src={item.image} alt={item.title} className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-4 text-center">
-              <h4 className="text-xl font-bold mb-1">{item.title}</h4>
-              <p className="uppercase text-sm mb-4">{item.category}</p>
-              <div className="flex gap-3 justify-center">
-                {item.links && item.links.map((link, i) => {
-                  const isVdo = item.category === 'VDO';
-                  return (
-                    <a
-                      key={i}
-                      href={isVdo ? "#" : link.url}
-                      target={isVdo ? "_self" : "_blank"}
-                      rel={isVdo ? "" : "noopener noreferrer"}
-                      onClick={(e) => {
-                        if (isVdo) {
-                          e.preventDefault();
-                          setVdoModalUrl(link.url);
-                        }
-                      }}
-                      className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/40 rounded-full transition-colors text-xs font-medium backdrop-blur-sm"
-                      title={link.label}
-                    >
-                      <ExternalLink size={12} />
-                      {link.label}
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+          <VirtualMasonryItem key={item.id} item={item} filter={filter} onPlay={setVdoModalUrl} />
         ))}
       </div>
 
