@@ -57,21 +57,39 @@ export const RESUME_EDUCATION: ResumeItem[] = [
 
 export const RESUME_CERTIFICATES: ResumeItem[] = [
   {
+    title: 'Certificate of Basic Baking/Pastry Course',
+    subtitle: 'KlongToei Vocational School',
+    duration: '200 Hours', // No year period as requested
+    description: ['Learn the basics of baking, from the types of baked goods and cakes, to combining different ingredients to create greater variety, and techniques for assembling a wide range of baked goods, desserts, and cakes.']
+  },
+  {
+    title: 'Certificate of Professional Barista',
+    subtitle: 'KlongToei Vocational School',
+    duration: '90 Hours', // No year period as requested
+    description: ['The practical training and activities are designed to prepare students for the fundamental duties of a barista. The instruction is detailed, covering every aspect and emphasizing key information to ensure students understand and can effectively teach the skills they have learned..']
+  },
+  {
+    title: 'Certificate of Basic Barista Course',
+    subtitle: 'KlongToei Vocational School',
+    duration: '90 Hours', // No year period as requested
+    description: ['For beginners with no prior experience, the focus is on coffee theory, perfect espresso extraction, milk steaming techniques, making hot and cold beverages, coffee machine maintenance, and preparing various coffee, tea, milk tea, and other drinks.']
+  },
+  {
     title: 'Certificate of IOS Application development',
     subtitle: 'International College King Mongkuts Institute of Technology Ladkrabang',
-    duration: '', // No year period as requested
+    duration: '200 hours', // No year period as requested
     description: ['To create an Apple distribution certificate, open Keychain Access, request a certificate from a certificate authority, and upload the CSR file.']
   },
   {
     title: 'Introduction to Microsoft ASP.Net',
     subtitle: 'Microsoft Approved Course',
-    duration: '',
+    duration: '15 hours',
     description: ['Part of the .NET Platform: ASP.NET extends the .NET platform with tools and libraries specifically for web development. This means developers can leverage the vast .NET ecosystem and use languages like C#, F#, and Visual Basic to write both client-side and server-side code.']
   },
   {
     title: 'Certificate of Teacher Assistance',
     subtitle: 'Teacher assistance of C Langguage',
-    duration: '',
+    duration: '1 academic year',
     description: ['Department of Computer Engineering, Mahanakorn University of Technology']
   }
 ];
