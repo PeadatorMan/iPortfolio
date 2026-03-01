@@ -30,7 +30,7 @@ export interface ResumeItem {
 export interface PortfolioItem {
   id: string;
   title: string;
-  category: 'app' | 'web' | 'card';
+  category: 'app' | 'web' | 'card' | 'animation' | 'VDO';
   image: string;
   description: string;
   links: { label: string; url: string }[];

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronRight, MapPin, Mail, Phone, Smile, Briefcase, Headset, Users, ChevronDown, Download, Globe, GraduationCap, ExternalLink, CheckCircle } from 'lucide-react';
-import { SOCIAL_LINKS, MENU_ITEMS, PROFILE_DATA, SKILLS, RESUME_EDUCATION, RESUME_EXPERIENCE, PORTFOLIO_ITEMS, SERVICES, TESTIMONIALS, RESUME_CERTIFICATES } from './constants';
+import { SOCIAL_LINKS, MENU_ITEMS, PROFILE_DATA, SKILLS, RESUME_EDUCATION, RESUME_EXPERIENCE, PORTFOLIO_ITEMS, PORTFOLIO_VDO_ITEMS, SERVICES, TESTIMONIALS, RESUME_CERTIFICATES } from './constants';
 import GeminiChat from './components/GeminiChat';
 import { generatePDF } from './services/pdfService';
 
@@ -453,22 +453,38 @@ const ModernCVTemplate = () => (
 );
 
 const Portfolio = () => {
-  const [filter, setFilter] = useState<'all' | 'app' | 'card' | 'web'>('all');
+  const [filter, setFilter] = useState<'all' | 'app' | 'card' | 'web' | 'animation' | 'VDO'>('all');
   const [visibleCount, setVisibleCount] = useState(9); // Initial view count, fits 3x3 grid nicely
+  const [vdoModalUrl, setVdoModalUrl] = useState<string | null>(null);
 
   useEffect(() => {
     // Reset visible count when filter changes
     setVisibleCount(9);
   }, [filter]);
 
-  const filteredItems = filter === 'all'
-    ? PORTFOLIO_ITEMS
-    : PORTFOLIO_ITEMS.filter(item => item.category === filter);
+  let filteredItems = PORTFOLIO_ITEMS;
+  if (filter === 'all') {
+    filteredItems = PORTFOLIO_ITEMS.filter(item => item.category !== 'VDO');
+  } else if (filter === 'VDO') {
+    filteredItems = PORTFOLIO_VDO_ITEMS;
+  } else {
+    filteredItems = PORTFOLIO_ITEMS.filter(item => item.category === filter);
+  }
 
   const displayedItems = filteredItems.slice(0, visibleCount);
 
   const handleLoadMore = () => {
     setVisibleCount(prev => prev + 8);
+  };
+
+  const getEmbedUrl = (url: string) => {
+    // Convert regular YouTube URL to embed URL with autoplay
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    if (match && match[2].length === 11) {
+      return `https://www.youtube.com/embed/${match[2]}?autoplay=1`;
+    }
+    return url;
   };
 
   return (
@@ -477,7 +493,7 @@ const Portfolio = () => {
 
       <div className="flex justify-center mb-8">
         <ul className="flex flex-wrap gap-4 bg-white px-6 py-2 rounded-full shadow-sm">
-          {['all', 'app', 'card', 'web'].map((cat) => (
+          {['all', 'app', 'card', 'web', 'animation', 'VDO'].map((cat) => (
             <li
               key={cat}
               onClick={() => setFilter(cat as any)}
@@ -497,19 +513,28 @@ const Portfolio = () => {
               <h4 className="text-xl font-bold mb-1">{item.title}</h4>
               <p className="uppercase text-sm mb-4">{item.category}</p>
               <div className="flex gap-3 justify-center">
-                {item.links && item.links.map((link, i) => (
-                  <a
-                    key={i}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/40 rounded-full transition-colors text-xs font-medium backdrop-blur-sm"
-                    title={link.label}
-                  >
-                    <ExternalLink size={12} />
-                    {link.label}
-                  </a>
-                ))}
+                {item.links && item.links.map((link, i) => {
+                  const isVdo = item.category === 'VDO';
+                  return (
+                    <a
+                      key={i}
+                      href={isVdo ? "#" : link.url}
+                      target={isVdo ? "_self" : "_blank"}
+                      rel={isVdo ? "" : "noopener noreferrer"}
+                      onClick={(e) => {
+                        if (isVdo) {
+                          e.preventDefault();
+                          setVdoModalUrl(link.url);
+                        }
+                      }}
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/40 rounded-full transition-colors text-xs font-medium backdrop-blur-sm"
+                      title={link.label}
+                    >
+                      <ExternalLink size={12} />
+                      {link.label}
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -524,6 +549,30 @@ const Portfolio = () => {
           >
             Load More
           </button>
+        </div>
+      )}
+
+      {/* VDO Modal */}
+      {vdoModalUrl && (
+        <div className="fixed inset-0 z-[1000] bg-black/90 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-5xl">
+            <button
+              onClick={() => setVdoModalUrl(null)}
+              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+            >
+              <X size={32} />
+            </button>
+            <div className="relative pt-[56.25%] w-full bg-black rounded shadow-2xl overflow-hidden">
+              {/* Unmounting the iframe destroys the VDO automatically when closed */}
+              <iframe
+                src={getEmbedUrl(vdoModalUrl)}
+                title="VDO Player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full border-0"
+              ></iframe>
+            </div>
+          </div>
         </div>
       )}
     </section>

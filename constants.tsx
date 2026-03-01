@@ -4,6 +4,7 @@ import { MenuItem, ResumeItem, PortfolioItem, ServiceItem, Testimonial, Skill } 
 
 // Re-export data from separate files
 export { PORTFOLIO_ITEMS } from './portfolioData';
+export { PORTFOLIO_ITEMS as PORTFOLIO_VDO_ITEMS } from './portfolioVDOdata';
 export { RESUME_EXPERIENCE } from './experienceData';
 
 export const SOCIAL_LINKS = [
