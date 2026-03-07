@@ -85,7 +85,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "38",
     title: "LOTTE Xylitol",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-037.jpg",
     description: "LOTTE Xylitol.",
     links: [
@@ -155,11 +155,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "6",
     title: "AIS VR 4K",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-005.jpg",
     description: "AIS VR 4K.",
     links: [
-      { label: "Live Demo", url: "https://everyday.365liveitup.space/VR4K/" }
+      { label: "Live Demo", url: "http://everyday.365liveitup.space/VR4K/" }
     ]
   },
   {
@@ -175,7 +175,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "8",
     title: "myAIS Applications",
-    category: "web",
+    category: "app",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-007.jpg",
     description: "myAIS Applications",
     links: [
@@ -265,7 +265,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "18",
     title: "AIS Serenade Happening Concert",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-017.jpg",
     description: "AIS Serenade Happening Concert.",
     links: [
@@ -275,7 +275,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "19",
     title: "AIS Serenade Happening Concert : Rock Mountain",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-018.jpg",
     description: "AIS Serenade Happening Concert : Rock Mountain.",
     links: [
@@ -285,7 +285,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "20",
     title: "AIS Serenade Happening Concert : Potato",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-019.jpg",
     description: "AIS Serenade Happening Concert : Potato.",
     links: [
@@ -295,7 +295,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "21",
     title: "AIS Serenade Happening Concert : The Lion King",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-020.jpg",
     description: "AIS Serenade Happening Concert : The Lion King.",
     links: [
@@ -305,7 +305,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "22",
     title: "AIS Serenade Happening Concert : The Rock Power Concert",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-021.jpg",
     description: "AIS Serenade Happening Concert : The Rock Power Concert.",
     links: [
@@ -425,7 +425,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "43",
     title: "AIS Serenade Happening Concert : byrdandheart",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-042.jpg",
     description: "AIS Serenade Happening Concert : byrdandheart.",
     links: [
@@ -435,7 +435,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "44",
     title: "AIS Serenade Happening Concert : lord lai mungkorn",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-044.jpg",
     description: "AIS Serenade Happening Concert : lord lai mungkorn.",
     links: [
@@ -455,7 +455,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "46",
     title: "AIS Serenade Happening Concert : Body Slam Fest",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-045.jpg",
     description: "AIS Serenade Happening Concert : Body Slam Fest.",
     links: [
@@ -465,7 +465,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "47",
     title: "AIS Serenade Happening Concert : bunlang make 2019",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-046.jpg",
     description: "AIS Serenade Happening Concert : bunlang make 2019.",
     links: [
@@ -475,7 +475,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "48",
     title: "AIS Serenade Happening Concert : peck love in space",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-047.jpg",
     description: "AIS Serenade Happening Concert : peck love in space.",
     links: [
@@ -485,7 +485,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "49",
     title: "AIS Serenade Happening Concert : water war music festival",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-048.jpg",
     description: "AIS Serenade Happening Concert : water war music festival.",
     links: [
@@ -495,7 +495,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "50",
     title: "AIS Serenade Happening Concert :  Whitehaus",
-    category: "web",
+    category: "animation",
     image: "https://cv.365liveitup.space/img/portfolio/port-img-049x.jpg",
     description: "AIS Serenade Happening Concert :  Whitehaus.",
     links: [
