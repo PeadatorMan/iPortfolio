@@ -73,6 +73,26 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ]
   },
   {
+    id: "56",
+    title: "laurier COOL",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-056x.jpg",
+    description: "laurier COOL.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/laurierCOOL" }
+    ]
+  },
+  {
+    id: "57",
+    title: "Ajinomoto",
+    category: "web",
+    image: "https://cv.365liveitup.space/img/portfolio/port-img-057x.jpg",
+    description: "Ajinomoto.",
+    links: [
+      { label: "Live Demo", url: "https://everyday.365liveitup.space/ajinomoto" }
+    ]
+  },
+  {
     id: "37",
     title: "Gear S3 frontier",
     category: "web",
