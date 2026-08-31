@@ -42,18 +42,24 @@ export const SKILLS: Skill[] = [
 ];
 
 export const RESUME_EDUCATION: ResumeItem[] = [
+  // {
+  //   title: 'B.Eng (Computer Engineering)',
+  //   subtitle: 'Mahanakorn University of Technology, Bangkok, Thailand',
+  //   duration: '1999 - 2001',
+  //   description: ['A Bachelor of Engineering (B.Eng.) in Electrical and Computer Engineering (ECE) is a 2.5 - year undergraduate program combining, typically, 150 credits of coursework in power systems, electronics, and computer science.', 'It prepares graduates for roles in AI, robotics, embedded systems, and telecommunications, often featuring capstone projects and specialized tracks']
+  // },
   {
-    title: 'B.Eng (Computer Engineering)',
-    subtitle: 'Mahanakorn University of Technology, Bangkok, Thailand',
-    duration: '1999 - 2001',
-    description: ['A Bachelor of Engineering (B.Eng.) in Electrical and Computer Engineering (ECE) is a 2.5 - year undergraduate program combining, typically, 150 credits of coursework in power systems, electronics, and computer science.', 'It prepares graduates for roles in AI, robotics, embedded systems, and telecommunications, often featuring capstone projects and specialized tracks']
+    title: 'Diploma Certificate in Electrical Power (Dip.Cert.)',
+    subtitle: 'Phitsanulok Technical College, Phitsanulok, Thailand',
+    duration: '1993 - 1995', // 2 years
+    description: ['A Diploma in Electrical Power Engineering (typically 1–2 years) provides technical training in the design, installation, operation, and maintenance of power systems, covering areas like generation, transmission, distribution, and renewable energy.', 'Programs focus on practical skills, including troubleshooting, electrical machinery, safety compliance, and power system analysis for roles in utility, manufacturing, and engineering firms']
   },
   {
-    title: 'Electrical Power, Diploma Certificate',
+    title: 'Vocational Certificate in Electrical Power (Voc.Cert.)',
     subtitle: 'Phitsanulok Technical College, Phitsanulok, Thailand',
-    duration: '1994 - 1997',
-    description: ['A Diploma in Electrical Power Engineering (typically 1–5 years) provides technical training in the design, installation, operation, and maintenance of power systems, covering areas like generation, transmission, distribution, and renewable energy.', 'Programs focus on practical skills, including troubleshooting, electrical machinery, safety compliance, and power system analysis for roles in utility, manufacturing, and engineering firms']
-  }
+    duration: '1990 - 1993', // 3 years
+    description: ['A Vocational Certificate in Electrical Power Engineering (typically 1–3 years) provides technical training in the design, installation, operation, and maintenance of power systems, covering areas like generation, transmission, distribution, and renewable energy.', 'Programs focus on practical skills, including troubleshooting, electrical machinery, safety compliance, and power system analysis for roles in utility, manufacturing, and engineering firms']
+  },
 ];
 
 export const RESUME_CERTIFICATES: ResumeItem[] = [
@@ -115,7 +121,7 @@ export const PROFILE_DATA = {
   aboutShort: "I am a passionate UX/UI designer and web developer based in Bangkok, Thailand.",
   aboutLong: "A strong foundational knowledge in Full Stack Development," +
     "specializing in Angular, Node.js and modern JavaScript frameworks. Demonstrated ability to quickly design, " +
-    "develop, and debug robust web applications and mobile prototypes (Flutter)." +
+    "develop, and debug robust web applications and mobile prototypes (Flutter). " +
     "Eager to apply problem-solving skills and continuous learning aptitude to contribute " +
     "immediately to challenging development projects. " +
     "Unit Testing, Integration Testing, " +

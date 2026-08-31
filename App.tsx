@@ -101,15 +101,17 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-y-4 gap-x-8 mb-6">
             <ul className="space-y-4">
               <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Birthday:</strong> <span className="ml-2">{PROFILE_DATA.birthday}</span></li>
-              <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Website:</strong> <span className="ml-2">{PROFILE_DATA.website}</span></li>
               <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Phone:</strong> <span className="ml-2">{PROFILE_DATA.phone}</span></li>
               <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>City:</strong> <span className="ml-2">{PROFILE_DATA.city}</span></li>
+              <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Website:</strong> <span className="ml-2">{PROFILE_DATA.website}</span></li>
             </ul>
             <ul className="space-y-4">
               <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Age:</strong> <span className="ml-2">{PROFILE_DATA.age}</span></li>
-              <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Degree:</strong> <span className="ml-2">{PROFILE_DATA.degree}</span></li>
               <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Email:</strong> <span className="ml-2">{PROFILE_DATA.email}</span></li>
               <li className="flex items-center"><ChevronRight className="text-primary mr-2" size={16} /> <strong>Freelance:</strong> <span className="ml-2">{PROFILE_DATA.freelance}</span></li>
+              <li className="flex items-center">
+                {/* <ChevronRight className="text-primary mr-2" size={16} /> <strong>Degree:</strong> <span className="ml-2">{PROFILE_DATA.degree}</span> */}
+              </li>
             </ul>
           </div>
           <p className="text-gray-600">

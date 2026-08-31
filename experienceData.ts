@@ -3,8 +3,8 @@ import { ResumeItem } from './types';
 export const RESUME_EXPERIENCE: ResumeItem[] = [
   {
     title: 'Look Like Developer',
-    subtitle: 'Look Like Developer, Wang Thonglang, BKK',
-    duration: '2020 - 2025',
+    subtitle: 'Look Like Developer (Freelance), Wang Thonglang, BKK',
+    duration: '2020 - 2028',
     description: [
       'Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).',
       "Consistently applied best practices for writing clean, secure, readable, and scalable code.",
@@ -37,7 +37,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
   {
     title: 'Senior Graphic Design Specialist and Fullstack Developer',
     subtitle: 'Spark Solutions Co.,Ltd, Kannayo, BKK',
-    duration: '2019 - 2025',
+    duration: '2020 - 2025',
     description: [
       'Performed coding, debugging, and unit testing tasks in support of projects.',
       'Provided ongoing maintenance for assigned applications and systems.',
@@ -101,7 +101,7 @@ export const RESUME_EXPERIENCE: ResumeItem[] = [
   {
     title: 'Frontend Developer',
     subtitle: 'Digital New Age Agency Co.,Ltd., Bangkok, Thailand',
-    duration: '2013 - 2020',
+    duration: '2012 - 2020',
     description: [
       'Performed coding, debugging, and unit testing tasks in support of projects.',
       'Provided ongoing maintenance for assigned applications and systems.',
